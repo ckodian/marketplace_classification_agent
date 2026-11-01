@@ -1,0 +1,10 @@
+asyncpg
+python-dotenv
+pydantic-settings
+fastapi
+pgvector
+uvicorn[standard]
+sqlalchemy[asyncio]
+sqlalchemy_utils
+httpx
+psycopg[binary]

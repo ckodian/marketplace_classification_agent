@@ -1,0 +1,6 @@
+agentic-ai-public
+venv
+.idea
+**/*.iml
+**/.DS_Store
+**/__pycache__

@@ -1,0 +1,33 @@
+services:
+  agent-db:
+    image: pgvector/pgvector:pg16
+    container_name: pgvector-db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: pgvector
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "5533:5432"
+
+  agent-pgadmin:
+    image: dpage/pgadmin4:latest
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@agent.dev
+      PGADMIN_DEFAULT_PASSWORD: admin
+      GLOBALLY_DELIVERABLE: "false"
+    ports:
+      - "8080:80"
+    depends_on:
+      agent-db:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+  ydata:
