@@ -34,7 +34,6 @@ async def get_db() -> AsyncSession:
             raise
 
 
-@asynccontextmanager
 async def get_db_session():
     async with async_session_factory() as session:
         try:

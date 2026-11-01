@@ -22,7 +22,7 @@ from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker
 
 from src.models.categories import CategoryEmbedding  # adjust to where models.py lives
-from src.services.rag.embedder import EmbeddingError, OllamaEmbedder
+from src.services.embedder import EmbeddingError, OllamaEmbedder
 
 logger = logging.getLogger(__name__)
 
@@ -31,12 +31,12 @@ logger = logging.getLogger(__name__)
 # correctly triggers a full re-embed.
 SOURCE_TEXT_SQL = """
     c.name
-    || CASE WHEN nlevel(c.path) > 1 THEN E'\\n' || (    -- roots: path = name
+    || CASE WHEN nlevel(c.path) > 1 THEN chr(10) || ( 
         SELECT string_agg(a.name, ' > ' ORDER BY nlevel(a.path))
           FROM categories a
          WHERE a.path @> c.path
     ) ELSE '' END
-    || COALESCE(E'\\n' || NULLIF(btrim(c.description), ''), '')
+    || COALESCE(chr(10) || NULLIF(btrim(c.description), ''), '')
 """
 
 PENDING_SQL = text(f"""
@@ -104,7 +104,12 @@ async def select_pending(
     result = await session.execute(
         PENDING_SQL, {"model": model, "after": after, "limit": limit, "force": force}
     )
-    return [(r.id, r.source_text) for r in result]
+    rows = [(r.id, r.source_text) for r in result]   # consume the cursor exactly once
+
+    for cat_id, source_text in rows:
+        logger.warning("pending %s: %r", cat_id, source_text)
+
+    return rows
 
 
 async def upsert_embeddings(

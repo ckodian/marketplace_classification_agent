@@ -1,0 +1,225 @@
+[
+  {
+    "sample": {
+      "case": "easy",
+      "expected": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Cage Accessories > Bird Cage Food & Water Dishes",
+      "product": {
+        "product_id": "s-001",
+        "title": "Stainless Steel Clip-On Water Dish for Parrot Cages",
+        "description": "Rust-proof 300 ml cup with a screw clamp that fits cage bars up to 10 mm. Suitable for cockatiels, conures and small parrots.",
+        "attributes": {
+          "material": "stainless steel",
+          "capacity_ml": 300
+        },
+        "price": {
+          "amount": "12.95",
+          "currency": "AUD"
+        }
+      }
+    },
+    "response": null,
+    "error": "HTTPStatusError(\"Server error '500 Internal Server Error' for url 'http://localhost:8000/products/classify'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500\") Internal Server Error",
+    "seconds": 0.1
+  },
+  {
+    "sample": {
+      "case": "easy",
+      "expected": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Food",
+      "product": {
+        "product_id": "s-002",
+        "title": "Premium Budgie Seed Mix 2kg",
+        "description": "Blend of millet, canary seed and oats for budgerigars and finches.",
+        "attributes": {
+          "weight_kg": 2
+        }
+      }
+    },
+    "response": null,
+    "error": "ReadError('[Errno 54] Connection reset by peer') ",
+    "seconds": 0.0
+  },
+  {
+    "sample": {
+      "case": "easy",
+      "expected": "Electronics > Audio > Audio Components > Headphones & Headsets > Headphones",
+      "product": {
+        "product_id": "s-003",
+        "title": "Wireless Noise Cancelling Over-Ear Headphones",
+        "description": "Bluetooth 5.3, 40-hour battery, foldable design with carry case.",
+        "attributes": {
+          "connectivity": "bluetooth",
+          "colour": "black"
+        }
+      }
+    },
+    "response": null,
+    "error": "HTTPStatusError(\"Server error '500 Internal Server Error' for url 'http://localhost:8000/products/classify'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500\") Internal Server Error",
+    "seconds": 0.0
+  },
+  {
+    "sample": {
+      "case": "easy",
+      "expected": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Electric Kettles",
+      "product": {
+        "product_id": "s-004",
+        "title": "1.7L Glass Electric Kettle with Temperature Control",
+        "description": "Boils in 4 minutes, keep-warm function, auto shut-off, LED light.",
+        "attributes": {
+          "capacity_l": 1.7,
+          "power_w": 2200
+        }
+      }
+    },
+    "response": null,
+    "error": "ReadError('[Errno 54] Connection reset by peer') ",
+    "seconds": 0.0
+  },
+  {
+    "sample": {
+      "case": "easy",
+      "expected": "Toys & Games > Toys > Building Toys (construction sets)",
+      "product": {
+        "product_id": "s-005",
+        "title": "Classic Building Bricks Set, 500 Pieces",
+        "description": "Compatible interlocking bricks in 30 colours for ages 4+. Includes storage tub.",
+        "attributes": {
+          "pieces": 500,
+          "age_range": "4+"
+        }
+      }
+    },
+    "response": null,
+    "error": "HTTPStatusError(\"Server error '500 Internal Server Error' for url 'http://localhost:8000/products/classify'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500\") Internal Server Error",
+    "seconds": 0.0
+  },
+  {
+    "sample": {
+      "case": "easy",
+      "expected": "Animals & Pet Supplies > Pet Supplies > Pet Collars & Harnesses (or dog-specific equivalent)",
+      "product": {
+        "product_id": "s-006",
+        "title": "No-Pull Dog Harness, Medium",
+        "description": "Padded chest plate, two leash clips, reflective stitching. Fits chest 55-75 cm.",
+        "attributes": {
+          "size": "M",
+          "colour": "red"
+        }
+      }
+    },
+    "response": null,
+    "error": "ReadError('[Errno 54] Connection reset by peer') ",
+    "seconds": 0.0
+  },
+  {
+    "sample": {
+      "case": "sibling_depth",
+      "expected": "Home & Garden > Kitchen & Dining > Cookware & Bakeware > Cookware > a frying pan / skillet leaf",
+      "product": {
+        "product_id": "s-007",
+        "title": "Pre-Seasoned Cast Iron Skillet 26cm",
+        "description": "Heavy cast iron frying pan for stovetop, oven and campfire. Induction compatible.",
+        "attributes": {
+          "material": "cast iron",
+          "diameter_cm": 26
+        }
+      }
+    },
+    "response": null,
+    "error": "HTTPStatusError(\"Server error '500 Internal Server Error' for url 'http://localhost:8000/products/classify'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500\") Internal Server Error",
+    "seconds": 0.0
+  },
+  {
+    "sample": {
+      "case": "variant",
+      "expected": "Same category as s-007 (base product). Re-run after s-007 is linked to test the sibling path.",
+      "product": {
+        "product_id": "s-007-30",
+        "title": "Pre-Seasoned Cast Iron Skillet 30cm",
+        "attributes": {
+          "material": "cast iron",
+          "diameter_cm": 30
+        },
+        "base_product_id": "s-007"
+      }
+    },
+    "response": null,
+    "error": "ReadError('[Errno 54] Connection reset by peer') ",
+    "seconds": 0.0
+  },
+  {
+    "sample": {
+      "case": "ambiguous",
+      "expected": "Electronics (smart watch) vs Apparel & Accessories > Jewelry > Watches. Either is defensible; watch the critic.",
+      "product": {
+        "product_id": "s-008",
+        "title": "Fitness Smartwatch with Heart Rate and GPS",
+        "description": "Tracks steps, sleep and SpO2, receives phone notifications, 7-day battery, 5 ATM water resistant."
+      }
+    },
+    "response": null,
+    "error": "HTTPStatusError(\"Server error '500 Internal Server Error' for url 'http://localhost:8000/products/classify'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500\") Internal Server Error",
+    "seconds": 0.0
+  },
+  {
+    "sample": {
+      "case": "ambiguous",
+      "expected": "Laptop sleeve: electronics accessory vs bags & luggage. Watch the alternates.",
+      "product": {
+        "product_id": "s-009",
+        "title": "14-inch Neoprene Laptop Sleeve",
+        "description": "Slim padded sleeve with zip, fits most 13-14 inch laptops and tablets."
+      }
+    },
+    "response": null,
+    "error": "ReadError('[Errno 54] Connection reset by peer') ",
+    "seconds": 0.0
+  },
+  {
+    "sample": {
+      "case": "ambiguous",
+      "expected": "Sporting Goods > Exercise & Fitness > Yoga & Pilates > mat leaf",
+      "product": {
+        "product_id": "s-010",
+        "title": "Non-Slip TPE Exercise Mat 6mm",
+        "description": "For yoga, pilates and floor workouts. Includes carry strap."
+      }
+    },
+    "response": null,
+    "error": "HTTPStatusError(\"Server error '500 Internal Server Error' for url 'http://localhost:8000/products/classify'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500\") Internal Server Error",
+    "seconds": 0.0
+  },
+  {
+    "sample": {
+      "case": "poor_data",
+      "expected": "Unclear on purpose. A good result is low confidence and a review decision, not a confident guess.",
+      "product": {
+        "product_id": "s-011",
+        "title": "X-200 Pro",
+        "attributes": {
+          "colour": "grey",
+          "voltage": "240V"
+        }
+      }
+    },
+    "response": null,
+    "error": "ReadError('[Errno 54] Connection reset by peer') ",
+    "seconds": 0.0
+  },
+  {
+    "sample": {
+      "case": "poor_data",
+      "expected": "Gift card: probably a party/gift-giving leaf, if the taxonomy has one. Tests 'nothing fits well'.",
+      "product": {
+        "product_id": "s-012",
+        "title": "$50 Store Gift Card",
+        "price": {
+          "amount": "50.00",
+          "currency": "AUD"
+        }
+      }
+    },
+    "response": null,
+    "error": "HTTPStatusError(\"Server error '500 Internal Server Error' for url 'http://localhost:8000/products/classify'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500\") Internal Server Error",
+    "seconds": 0.0
+  }
+]

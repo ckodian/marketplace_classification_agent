@@ -1,0 +1,2515 @@
+[
+  {
+    "sample": {
+      "case": "easy",
+      "expected": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Cage Accessories > Bird Cage Food & Water Dishes",
+      "product": {
+        "product_id": "s-001",
+        "title": "Stainless Steel Clip-On Water Dish for Parrot Cages",
+        "description": "Rust-proof 300 ml cup with a screw clamp that fits cage bars up to 10 mm. Suitable for cockatiels, conures and small parrots.",
+        "attributes": {
+          "material": "stainless steel",
+          "capacity_ml": 300
+        },
+        "price": {
+          "amount": "12.95",
+          "currency": "AUD"
+        }
+      }
+    },
+    "response": {
+      "product_id": "s-001",
+      "final_category_id": "7386",
+      "final_category_path": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Cage Accessories > Bird Cage Food & Water Dishes",
+      "confidence": 0.908,
+      "confidence_breakdown": {
+        "self": 1.0,
+        "critic_agrees": 1.0,
+        "related_agrees": 0.0,
+        "retrieval": 0.6332285434102575
+      },
+      "decision": "auto_linked",
+      "candidates": [
+        {
+          "category_id": "7386",
+          "name": "Bird Cage Food & Water Dishes",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Cage Accessories > Bird Cage Food & Water Dishes",
+          "description": null,
+          "similarity": 0.6332285434102575,
+          "rank": 1,
+          "source": "vector"
+        },
+        {
+          "category_id": "499954",
+          "name": "Bird Cage Bird Baths",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Cage Accessories > Bird Cage Bird Baths",
+          "description": null,
+          "similarity": 0.5866939043926247,
+          "rank": 2,
+          "source": "vector"
+        },
+        {
+          "category_id": "4991",
+          "name": "Bird Ladders & Perches",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Ladders & Perches",
+          "description": null,
+          "similarity": 0.5817701296416948,
+          "rank": 3,
+          "source": "vector"
+        },
+        {
+          "category_id": "1425",
+          "name": "Ballcocks & Flappers",
+          "full_path": "Hardware > Plumbing > Plumbing Fixture Hardware & Parts > Toilet & Bidet Accessories > Ballcocks & Flappers",
+          "description": null,
+          "similarity": 0.5810027582034667,
+          "rank": 4,
+          "source": "vector"
+        },
+        {
+          "category_id": "505307",
+          "name": "Aquarium Air Stones & Diffusers",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Fish Supplies > Aquarium Air Stones & Diffusers",
+          "description": null,
+          "similarity": 0.5776884529698646,
+          "rank": 5,
+          "source": "vector"
+        },
+        {
+          "category_id": "5021",
+          "name": "Aquarium Gravel & Substrates",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Fish Supplies > Aquarium Gravel & Substrates",
+          "description": null,
+          "similarity": 0.5701868026892435,
+          "rank": 6,
+          "source": "vector"
+        },
+        {
+          "category_id": "499697",
+          "name": "In-Wall Carriers & Mounting Frames",
+          "full_path": "Hardware > Plumbing > Plumbing Fittings & Supports > In-Wall Carriers & Mounting Frames",
+          "description": null,
+          "similarity": 0.5656608523737674,
+          "rank": 7,
+          "source": "vector"
+        },
+        {
+          "category_id": "7470",
+          "name": "Septic Tank & Cesspool Treatments",
+          "full_path": "Hardware > Building Consumables > Chemicals > Septic Tank & Cesspool Treatments",
+          "description": null,
+          "similarity": 0.5652493678929571,
+          "rank": 8,
+          "source": "vector"
+        },
+        {
+          "category_id": "5646",
+          "name": "Water Softener Salt",
+          "full_path": "Hardware > Plumbing > Water Dispensing & Filtration > Water Softener Salt",
+          "description": null,
+          "similarity": 0.5649060024517898,
+          "rank": 9,
+          "source": "vector"
+        },
+        {
+          "category_id": "2817",
+          "name": "Toilet Tank Levers",
+          "full_path": "Hardware > Plumbing > Plumbing Fixture Hardware & Parts > Toilet & Bidet Accessories > Toilet Tank Levers",
+          "description": null,
+          "similarity": 0.5628704874824956,
+          "rank": 10,
+          "source": "vector"
+        },
+        {
+          "category_id": "500062",
+          "name": "Aquarium Temperature Controllers",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Fish Supplies > Aquarium Temperature Controllers",
+          "description": null,
+          "similarity": 0.5578401879358759,
+          "rank": 11,
+          "source": "vector"
+        },
+        {
+          "category_id": "5312",
+          "name": "Diving Knives & Shears",
+          "full_path": "Sporting Goods > Outdoor Recreation > Boating & Water Sports > Diving & Snorkeling > Diving Knives & Shears",
+          "description": null,
+          "similarity": 0.5574138086109234,
+          "rank": 12,
+          "source": "vector"
+        },
+        {
+          "category_id": "505303",
+          "name": "Aquarium & Pond Tubing",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Fish Supplies > Aquarium & Pond Tubing",
+          "description": null,
+          "similarity": 0.5569977556475438,
+          "rank": 13,
+          "source": "vector"
+        },
+        {
+          "category_id": "500038",
+          "name": "Aquarium Cleaning Supplies",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Fish Supplies > Aquarium Cleaning Supplies",
+          "description": null,
+          "similarity": 0.5569779269217734,
+          "rank": 14,
+          "source": "vector"
+        },
+        {
+          "category_id": "543633",
+          "name": "Sauna Buckets & Ladles",
+          "full_path": "Home & Garden > Pool & Spa > Sauna Accessories > Sauna Buckets & Ladles",
+          "description": null,
+          "similarity": 0.5562167231132599,
+          "rank": 15,
+          "source": "vector"
+        }
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "role": "classifier",
+          "output": {
+            "category_id": "7386",
+            "confidence": 1.0,
+            "rationale": "The product is a water dish for parrot cages, which falls under bird cage accessories and bird supplies. The given category 'Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Cage Accessories > Bird Cage Food & Water Dishes' is the most appropriate match.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 3758
+        },
+        {
+          "step_no": 2,
+          "role": "critic",
+          "output": {
+            "own_pick": "7386",
+            "verdict": "accept",
+            "issues": [],
+            "suggested_category_id": null,
+            "confidence": 1.0
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 2515
+        }
+      ]
+    },
+    "error": null,
+    "seconds": 6.5
+  },
+  {
+    "sample": {
+      "case": "easy",
+      "expected": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Food",
+      "product": {
+        "product_id": "s-002",
+        "title": "Premium Budgie Seed Mix 2kg",
+        "description": "Blend of millet, canary seed and oats for budgerigars and finches.",
+        "attributes": {
+          "weight_kg": 2
+        }
+      }
+    },
+    "response": {
+      "product_id": "s-002",
+      "final_category_id": null,
+      "final_category_path": null,
+      "confidence": 0.0,
+      "confidence_breakdown": {},
+      "decision": "failed",
+      "candidates": [
+        {
+          "category_id": "7398",
+          "name": "Bird Gyms & Playstands",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Gyms & Playstands",
+          "description": null,
+          "similarity": 0.5360451457460154,
+          "rank": 1,
+          "source": "vector"
+        },
+        {
+          "category_id": "4991",
+          "name": "Bird Ladders & Perches",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Ladders & Perches",
+          "description": null,
+          "similarity": 0.5109654399649766,
+          "rank": 2,
+          "source": "vector"
+        },
+        {
+          "category_id": "4684",
+          "name": "Buckwheat",
+          "full_path": "Food, Beverages & Tobacco > Food Items > Grains, Rice & Cereal > Buckwheat",
+          "description": null,
+          "similarity": 0.5089005665629369,
+          "rank": 3,
+          "source": "vector"
+        },
+        {
+          "category_id": "6613",
+          "name": "Eggplants",
+          "full_path": "Food, Beverages & Tobacco > Food Items > Fruits & Vegetables > Fresh & Frozen Vegetables > Eggplants",
+          "description": null,
+          "similarity": 0.5075070404255112,
+          "rank": 4,
+          "source": "vector"
+        },
+        {
+          "category_id": "7386",
+          "name": "Bird Cage Food & Water Dishes",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Cage Accessories > Bird Cage Food & Water Dishes",
+          "description": null,
+          "similarity": 0.5069577416651815,
+          "rank": 5,
+          "source": "vector"
+        },
+        {
+          "category_id": "505307",
+          "name": "Aquarium Air Stones & Diffusers",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Fish Supplies > Aquarium Air Stones & Diffusers",
+          "description": null,
+          "similarity": 0.5057356802899953,
+          "rank": 6,
+          "source": "vector"
+        },
+        {
+          "category_id": "1491",
+          "name": "Cinches",
+          "full_path": "Sporting Goods > Outdoor Recreation > Equestrian > Horse Tack > Cinches",
+          "description": null,
+          "similarity": 0.5054727956430772,
+          "rank": 7,
+          "source": "vector"
+        },
+        {
+          "category_id": "7193",
+          "name": "Wheatgrass",
+          "full_path": "Food, Beverages & Tobacco > Food Items > Fruits & Vegetables > Fresh & Frozen Vegetables > Wheatgrass",
+          "description": null,
+          "similarity": 0.5049607013130817,
+          "rank": 8,
+          "source": "vector"
+        },
+        {
+          "category_id": "4214",
+          "name": "Decorative Nutcrackers",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Tools & Utensils > Food Crackers > Nutcrackers > Decorative Nutcrackers",
+          "description": null,
+          "similarity": 0.5046460177320878,
+          "rank": 9,
+          "source": "vector"
+        },
+        {
+          "category_id": "7424",
+          "name": "Canopy Weights",
+          "full_path": "Home & Garden > Lawn & Garden > Outdoor Living > Outdoor Structures > Canopy & Gazebo Accessories > Canopy Weights",
+          "description": null,
+          "similarity": 0.5039032247153078,
+          "rank": 10,
+          "source": "vector"
+        },
+        {
+          "category_id": "6587",
+          "name": "Borage",
+          "full_path": "Food, Beverages & Tobacco > Food Items > Fruits & Vegetables > Fresh & Frozen Vegetables > Borage",
+          "description": null,
+          "similarity": 0.5035739703912295,
+          "rank": 11,
+          "source": "vector"
+        },
+        {
+          "category_id": "4690",
+          "name": "Oats, Grits & Hot Cereal",
+          "full_path": "Food, Beverages & Tobacco > Food Items > Grains, Rice & Cereal > Oats, Grits & Hot Cereal",
+          "description": null,
+          "similarity": 0.5028422478249377,
+          "rank": 12,
+          "source": "vector"
+        },
+        {
+          "category_id": "2282",
+          "name": "Cement, Mortar & Concrete Mixes",
+          "full_path": "Hardware > Building Consumables > Masonry Consumables > Cement, Mortar & Concrete Mixes",
+          "description": null,
+          "similarity": 0.5014115718042732,
+          "rank": 13,
+          "source": "vector"
+        },
+        {
+          "category_id": "4686",
+          "name": "Millet",
+          "full_path": "Food, Beverages & Tobacco > Food Items > Grains, Rice & Cereal > Millet",
+          "description": null,
+          "similarity": 0.500610381401204,
+          "rank": 14,
+          "source": "vector"
+        },
+        {
+          "category_id": "3426",
+          "name": "Bridles",
+          "full_path": "Sporting Goods > Outdoor Recreation > Equestrian > Horse Tack > Bridles",
+          "description": null,
+          "similarity": 0.4965157973538076,
+          "rank": 15,
+          "source": "vector"
+        }
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "role": "classifier",
+          "output": null,
+          "valid_choice": false,
+          "error": "Ollama request failed: ReadTimeout('')",
+          "latency_ms": 30006
+        },
+        {
+          "step_no": 2,
+          "role": "classifier",
+          "output": null,
+          "valid_choice": false,
+          "error": "Ollama request failed: ReadTimeout('')",
+          "latency_ms": 30011
+        }
+      ]
+    },
+    "error": null,
+    "seconds": 60.1
+  },
+  {
+    "sample": {
+      "case": "easy",
+      "expected": "Electronics > Audio > Audio Components > Headphones & Headsets > Headphones",
+      "product": {
+        "product_id": "s-003",
+        "title": "Wireless Noise Cancelling Over-Ear Headphones",
+        "description": "Bluetooth 5.3, 40-hour battery, foldable design with carry case.",
+        "attributes": {
+          "connectivity": "bluetooth",
+          "colour": "black"
+        }
+      }
+    },
+    "response": {
+      "product_id": "s-003",
+      "final_category_id": null,
+      "final_category_path": null,
+      "confidence": 0.0,
+      "confidence_breakdown": {},
+      "decision": "failed",
+      "candidates": [
+        {
+          "category_id": "3111",
+          "name": "Lancing Devices",
+          "full_path": "Health & Beauty > Health Care > Biometric Monitor Accessories > Blood Glucose Meter Accessories > Lancing Devices",
+          "description": null,
+          "similarity": 0.5305038374362173,
+          "rank": 1,
+          "source": "vector"
+        },
+        {
+          "category_id": "503004",
+          "name": "Headphone Cushions & Tips",
+          "full_path": "Electronics > Audio > Audio Accessories > Headphone & Headset Accessories > Headphone Cushions & Tips",
+          "description": null,
+          "similarity": 0.5284588269093787,
+          "rank": 2,
+          "source": "vector"
+        },
+        {
+          "category_id": "503020",
+          "name": "Camera Silencers & Sound Blimps",
+          "full_path": "Cameras & Optics > Camera & Optic Accessories > Camera Parts & Accessories > Camera Silencers & Sound Blimps",
+          "description": null,
+          "similarity": 0.5250302426544051,
+          "rank": 3,
+          "source": "vector"
+        },
+        {
+          "category_id": "499810",
+          "name": "MP3 Player Batteries",
+          "full_path": "Electronics > Electronics Accessories > Power > Batteries > MP3 Player Batteries",
+          "description": null,
+          "similarity": 0.5233974144818023,
+          "rank": 4,
+          "source": "vector"
+        },
+        {
+          "category_id": "5435",
+          "name": "Crossovers",
+          "full_path": "Electronics > Audio > Audio Components > Signal Processors > Crossovers",
+          "description": null,
+          "similarity": 0.5147425278254019,
+          "rank": 5,
+          "source": "vector"
+        },
+        {
+          "category_id": "5130",
+          "name": "Bluetooth Transmitters",
+          "full_path": "Electronics > Audio > Audio Components > Audio Transmitters > Bluetooth Transmitters",
+          "description": null,
+          "similarity": 0.5116910366275434,
+          "rank": 6,
+          "source": "vector"
+        },
+        {
+          "category_id": "367",
+          "name": "Blank Media",
+          "full_path": "Electronics > Electronics Accessories > Blank Media",
+          "description": null,
+          "similarity": 0.5059342384338414,
+          "rank": 7,
+          "source": "vector"
+        },
+        {
+          "category_id": "7566",
+          "name": "MP3 Player & Mobile Phone Accessory Sets",
+          "full_path": "Electronics > Audio > Audio Accessories > MP3 Player Accessories > MP3 Player & Mobile Phone Accessory Sets",
+          "description": null,
+          "similarity": 0.5052821937371617,
+          "rank": 8,
+          "source": "vector"
+        },
+        {
+          "category_id": "5366",
+          "name": "Fingerprint Readers",
+          "full_path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Fingerprint Readers",
+          "description": null,
+          "similarity": 0.504262536510086,
+          "rank": 9,
+          "source": "vector"
+        },
+        {
+          "category_id": "4056",
+          "name": "White Noise Machines",
+          "full_path": "Health & Beauty > Personal Care > Sleeping Aids > White Noise Machines",
+          "description": null,
+          "similarity": 0.502682835343392,
+          "rank": 10,
+          "source": "vector"
+        },
+        {
+          "category_id": "4465",
+          "name": "Wireless Presenters",
+          "full_path": "Office Supplies > Presentation Supplies > Wireless Presenters",
+          "description": null,
+          "similarity": 0.5019792019141276,
+          "rank": 11,
+          "source": "vector"
+        },
+        {
+          "category_id": "7479",
+          "name": "Bicycle Headset Spacers",
+          "full_path": "Sporting Goods > Outdoor Recreation > Cycling > Bicycle Parts > Bicycle Headset Parts > Bicycle Headset Spacers",
+          "description": null,
+          "similarity": 0.5013386759772381,
+          "rank": 12,
+          "source": "vector"
+        },
+        {
+          "category_id": "500119",
+          "name": "Tactile Transducers",
+          "full_path": "Electronics > Audio > Audio Accessories > Speaker Accessories > Tactile Transducers",
+          "description": null,
+          "similarity": 0.5009528097651412,
+          "rank": 13,
+          "source": "vector"
+        },
+        {
+          "category_id": "5596",
+          "name": "Noise Gates & Compressors",
+          "full_path": "Electronics > Audio > Audio Components > Signal Processors > Noise Gates & Compressors",
+          "description": null,
+          "similarity": 0.5007055402643132,
+          "rank": 14,
+          "source": "vector"
+        },
+        {
+          "category_id": "499878",
+          "name": "Mobile Phone & Tablet Tripods & Monopods",
+          "full_path": "Electronics > Electronics Accessories > Mobile Phone & Tablet Tripods & Monopods",
+          "description": null,
+          "similarity": 0.5007037818012448,
+          "rank": 15,
+          "source": "vector"
+        }
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "role": "classifier",
+          "output": {
+            "category_id": "id=5130 | Electronics > Audio > Audio Components > Audio Transmitters > Bluetooth Transmitters",
+            "confidence": 0.85,
+            "rationale": "The product is a wireless noise-cancelling headphone, which falls under the category of audio accessories. The connectivity attribute specifies Bluetooth, which aligns with the Bluetooth Transmitters subcategory.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": false,
+          "error": "id 'id=5130 | Electronics > Audio > Audio Components > Audio Transmitters > Bluetooth Transmitters' not in candidates",
+          "latency_ms": 2922
+        },
+        {
+          "step_no": 2,
+          "role": "classifier",
+          "output": {
+            "category_id": "id=5130 | Electronics > Audio > Audio Components > Audio Transmitters > Bluetooth Transmitters",
+            "confidence": 0.85,
+            "rationale": "The product is a wireless noise-cancelling headphone, which falls under the category of audio accessories. The connectivity attribute specifies Bluetooth, which aligns with the Bluetooth Transmitters subcategory.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": false,
+          "error": "id 'id=5130 | Electronics > Audio > Audio Components > Audio Transmitters > Bluetooth Transmitters' not in candidates",
+          "latency_ms": 1841
+        }
+      ]
+    },
+    "error": null,
+    "seconds": 4.9
+  },
+  {
+    "sample": {
+      "case": "easy",
+      "expected": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Electric Kettles",
+      "product": {
+        "product_id": "s-004",
+        "title": "1.7L Glass Electric Kettle with Temperature Control",
+        "description": "Boils in 4 minutes, keep-warm function, auto shut-off, LED light.",
+        "attributes": {
+          "capacity_l": 1.7,
+          "power_w": 2200
+        }
+      }
+    },
+    "response": {
+      "product_id": "s-004",
+      "final_category_id": null,
+      "final_category_path": null,
+      "confidence": 0.0,
+      "confidence_breakdown": {},
+      "decision": "failed",
+      "candidates": [
+        {
+          "category_id": "751",
+          "name": "Electric Kettles",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Electric Kettles",
+          "description": null,
+          "similarity": 0.5627815313134089,
+          "rank": 1,
+          "source": "vector"
+        },
+        {
+          "category_id": "3797",
+          "name": "Heat-Shrink Tubing",
+          "full_path": "Hardware > Power & Electrical Supplies > Conduit & Housings > Heat-Shrink Tubing",
+          "description": null,
+          "similarity": 0.5457547684885176,
+          "rank": 2,
+          "source": "vector"
+        },
+        {
+          "category_id": "500066",
+          "name": "Electric Kettle Accessories",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Appliance Accessories > Electric Kettle Accessories",
+          "description": null,
+          "similarity": 0.5344423096708186,
+          "rank": 3,
+          "source": "vector"
+        },
+        {
+          "category_id": "1647",
+          "name": "Electric & Stovetop Espresso Pots",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Coffee Makers & Espresso Machines > Electric & Stovetop Espresso Pots",
+          "description": null,
+          "similarity": 0.5313079161483459,
+          "rank": 4,
+          "source": "vector"
+        },
+        {
+          "category_id": "3082",
+          "name": "Furnaces & Boilers",
+          "full_path": "Home & Garden > Household Appliances > Climate Control Appliances > Furnaces & Boilers",
+          "description": null,
+          "similarity": 0.5303250478923357,
+          "rank": 5,
+          "source": "vector"
+        },
+        {
+          "category_id": "6727",
+          "name": "Evaporative Coolers",
+          "full_path": "Home & Garden > Household Appliances > Climate Control Appliances > Evaporative Coolers",
+          "description": null,
+          "similarity": 0.529920865325622,
+          "rank": 6,
+          "source": "vector"
+        },
+        {
+          "category_id": "3526",
+          "name": "Milk Frothers & Steamers",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Milk Frothers & Steamers",
+          "description": null,
+          "similarity": 0.527653442548064,
+          "rank": 7,
+          "source": "vector"
+        },
+        {
+          "category_id": "505319",
+          "name": "Electrical Freeze Sprays",
+          "full_path": "Hardware > Building Consumables > Chemicals > Electrical Freeze Sprays",
+          "description": null,
+          "similarity": 0.5272772182096395,
+          "rank": 8,
+          "source": "vector"
+        },
+        {
+          "category_id": "659",
+          "name": "Stovetop Kettles",
+          "full_path": "Home & Garden > Kitchen & Dining > Cookware & Bakeware > Cookware > Stovetop Kettles",
+          "description": null,
+          "similarity": 0.5258283458403771,
+          "rank": 9,
+          "source": "vector"
+        },
+        {
+          "category_id": "6523",
+          "name": "Thermal Cookers",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Food Cookers & Steamers > Thermal Cookers",
+          "description": null,
+          "similarity": 0.5243740220001876,
+          "rank": 10,
+          "source": "vector"
+        },
+        {
+          "category_id": "1354",
+          "name": "Water Chillers",
+          "full_path": "Hardware > Plumbing > Water Dispensing & Filtration > Water Dispensers > Water Chillers",
+          "description": null,
+          "similarity": 0.5235205236624572,
+          "rank": 11,
+          "source": "vector"
+        },
+        {
+          "category_id": "7527",
+          "name": "Powered Hand Fans & Misters",
+          "full_path": "Home & Garden > Household Appliances > Climate Control Appliances > Fans > Powered Hand Fans & Misters",
+          "description": null,
+          "similarity": 0.5231070179152093,
+          "rank": 12,
+          "source": "vector"
+        },
+        {
+          "category_id": "5349",
+          "name": "Food Heat Lamps",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Food Warmers > Food Heat Lamps",
+          "description": null,
+          "similarity": 0.5219799538886861,
+          "rank": 13,
+          "source": "vector"
+        },
+        {
+          "category_id": "5287",
+          "name": "Beverage Warmers",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Beverage Warmers",
+          "description": null,
+          "similarity": 0.5215922542590637,
+          "rank": 14,
+          "source": "vector"
+        },
+        {
+          "category_id": "2060",
+          "name": "Heating Radiators",
+          "full_path": "Home & Garden > Household Appliances > Climate Control Appliances > Heating Radiators",
+          "description": null,
+          "similarity": 0.5215052936667187,
+          "rank": 15,
+          "source": "vector"
+        }
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "role": "classifier",
+          "output": {
+            "category_id": "id=751 | Home & Garden > Kitchen & Dining > Kitchen Appliances > Electric Kettles",
+            "confidence": 1.0,
+            "rationale": "The product description and attributes clearly indicate that this is an electric kettle, which fits perfectly under the 'Electric Kettles' category within 'Kitchen Appliances' in the Home & Garden section.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": false,
+          "error": "id 'id=751 | Home & Garden > Kitchen & Dining > Kitchen Appliances > Electric Kettles' not in candidates",
+          "latency_ms": 2918
+        },
+        {
+          "step_no": 2,
+          "role": "classifier",
+          "output": {
+            "category_id": "id=751 | Home & Garden > Kitchen & Dining > Kitchen Appliances > Electric Kettles",
+            "confidence": 1.0,
+            "rationale": "The product description and attributes clearly indicate that this is an electric kettle, which fits perfectly under the 'Electric Kettles' category within 'Kitchen Appliances' in the Home & Garden section.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": false,
+          "error": "id 'id=751 | Home & Garden > Kitchen & Dining > Kitchen Appliances > Electric Kettles' not in candidates",
+          "latency_ms": 1837
+        }
+      ]
+    },
+    "error": null,
+    "seconds": 4.9
+  },
+  {
+    "sample": {
+      "case": "easy",
+      "expected": "Toys & Games > Toys > Building Toys (construction sets)",
+      "product": {
+        "product_id": "s-005",
+        "title": "Classic Building Bricks Set, 500 Pieces",
+        "description": "Compatible interlocking bricks in 30 colours for ages 4+. Includes storage tub.",
+        "attributes": {
+          "pieces": 500,
+          "age_range": "4+"
+        }
+      }
+    },
+    "response": {
+      "product_id": "s-005",
+      "final_category_id": "3287",
+      "final_category_path": "Toys & Games > Toys > Building Toys > Interlocking Blocks",
+      "confidence": 0.9,
+      "confidence_breakdown": {
+        "self": 0.95,
+        "critic_agrees": 1.0,
+        "related_agrees": 0.0,
+        "retrieval": 0.6501517997051769
+      },
+      "decision": "auto_linked",
+      "candidates": [
+        {
+          "category_id": "3031",
+          "name": "Bricks & Concrete Blocks",
+          "full_path": "Hardware > Building Consumables > Masonry Consumables > Bricks & Concrete Blocks",
+          "description": null,
+          "similarity": 0.6780833673403027,
+          "rank": 1,
+          "source": "vector"
+        },
+        {
+          "category_id": "3287",
+          "name": "Interlocking Blocks",
+          "full_path": "Toys & Games > Toys > Building Toys > Interlocking Blocks",
+          "description": null,
+          "similarity": 0.6501517997051769,
+          "rank": 2,
+          "source": "vector"
+        },
+        {
+          "category_id": "2282",
+          "name": "Cement, Mortar & Concrete Mixes",
+          "full_path": "Hardware > Building Consumables > Masonry Consumables > Cement, Mortar & Concrete Mixes",
+          "description": null,
+          "similarity": 0.6326246796772671,
+          "rank": 3,
+          "source": "vector"
+        },
+        {
+          "category_id": "2474",
+          "name": "Paint Binders",
+          "full_path": "Hardware > Building Consumables > Painting Consumables > Paint Binders",
+          "description": null,
+          "similarity": 0.6184255990552322,
+          "rank": 4,
+          "source": "vector"
+        },
+        {
+          "category_id": "2058",
+          "name": "Primers",
+          "full_path": "Hardware > Building Consumables > Painting Consumables > Primers",
+          "description": null,
+          "similarity": 0.6163024812286894,
+          "rank": 5,
+          "source": "vector"
+        },
+        {
+          "category_id": "1361",
+          "name": "Paint",
+          "full_path": "Hardware > Building Consumables > Painting Consumables > Paint",
+          "description": null,
+          "similarity": 0.6110024352675384,
+          "rank": 6,
+          "source": "vector"
+        },
+        {
+          "category_id": "2337",
+          "name": "Floats",
+          "full_path": "Hardware > Tools > Masonry Tools > Floats",
+          "description": null,
+          "similarity": 0.6103048254513298,
+          "rank": 7,
+          "source": "vector"
+        },
+        {
+          "category_id": "499876",
+          "name": "Grout",
+          "full_path": "Hardware > Building Consumables > Masonry Consumables > Grout",
+          "description": null,
+          "similarity": 0.6098424356518948,
+          "rank": 8,
+          "source": "vector"
+        },
+        {
+          "category_id": "3163",
+          "name": "Marble Track Sets",
+          "full_path": "Toys & Games > Toys > Building Toys > Marble Track Sets",
+          "description": null,
+          "similarity": 0.6094407029919927,
+          "rank": 9,
+          "source": "vector"
+        },
+        {
+          "category_id": "505802",
+          "name": "Wall Patching Compounds & Plaster",
+          "full_path": "Hardware > Building Consumables > Wall Patching Compounds & Plaster",
+          "description": null,
+          "similarity": 0.6059879931147331,
+          "rank": 10,
+          "source": "vector"
+        },
+        {
+          "category_id": "503744",
+          "name": "Protective Coatings & Sealants",
+          "full_path": "Hardware > Building Consumables > Protective Coatings & Sealants",
+          "description": null,
+          "similarity": 0.6053699953851069,
+          "rank": 11,
+          "source": "vector"
+        },
+        {
+          "category_id": "503738",
+          "name": "Varnishes & Finishes",
+          "full_path": "Hardware > Building Consumables > Painting Consumables > Varnishes & Finishes",
+          "description": null,
+          "similarity": 0.6028255714538824,
+          "rank": 12,
+          "source": "vector"
+        },
+        {
+          "category_id": "505368",
+          "name": "Bathtub Bases & Feet",
+          "full_path": "Hardware > Plumbing > Plumbing Fixture Hardware & Parts > Bathtub Accessories > Bathtub Bases & Feet",
+          "description": null,
+          "similarity": 0.6015738849562929,
+          "rank": 13,
+          "source": "vector"
+        },
+        {
+          "category_id": "505305",
+          "name": "Plumbing Primer",
+          "full_path": "Hardware > Building Consumables > Plumbing Primer",
+          "description": null,
+          "similarity": 0.5991706543942225,
+          "rank": 14,
+          "source": "vector"
+        },
+        {
+          "category_id": "6393",
+          "name": "Bassinets & Cradles",
+          "full_path": "Furniture > Baby & Toddler Furniture > Bassinets & Cradles",
+          "description": null,
+          "similarity": 0.5990009900931357,
+          "rank": 15,
+          "source": "vector"
+        }
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "role": "classifier",
+          "output": {
+            "category_id": "3287",
+            "confidence": 0.95,
+            "rationale": "The product description indicates that this is a set of interlocking bricks designed for building and play, which aligns with the 'Building Toys > Interlocking Blocks' subcategory under 'Toys & Games'.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 2487
+        },
+        {
+          "step_no": 2,
+          "role": "critic",
+          "output": {
+            "own_pick": "3287",
+            "verdict": "accept",
+            "issues": [],
+            "suggested_category_id": null,
+            "confidence": 0.95
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 2246
+        }
+      ]
+    },
+    "error": null,
+    "seconds": 4.8
+  },
+  {
+    "sample": {
+      "case": "easy",
+      "expected": "Animals & Pet Supplies > Pet Supplies > Pet Collars & Harnesses (or dog-specific equivalent)",
+      "product": {
+        "product_id": "s-006",
+        "title": "No-Pull Dog Harness, Medium",
+        "description": "Padded chest plate, two leash clips, reflective stitching. Fits chest 55-75 cm.",
+        "attributes": {
+          "size": "M",
+          "colour": "red"
+        }
+      }
+    },
+    "response": {
+      "product_id": "s-006",
+      "final_category_id": "6250",
+      "final_category_path": "Animals & Pet Supplies > Pet Supplies > Pet Collars & Harnesses",
+      "confidence": 0.9,
+      "confidence_breakdown": {
+        "self": 1.0,
+        "critic_agrees": 1.0,
+        "related_agrees": 0.0,
+        "retrieval": 0.5991558674016516
+      },
+      "decision": "auto_linked",
+      "candidates": [
+        {
+          "category_id": "6250",
+          "name": "Pet Collars & Harnesses",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Pet Collars & Harnesses",
+          "description": null,
+          "similarity": 0.5991558674016516,
+          "rank": 1,
+          "source": "vector"
+        },
+        {
+          "category_id": "3035",
+          "name": "Tripod Collars & Mounts",
+          "full_path": "Cameras & Optics > Camera & Optic Accessories > Tripod & Monopod Accessories > Tripod Collars & Mounts",
+          "description": null,
+          "similarity": 0.5725943100002718,
+          "rank": 2,
+          "source": "vector"
+        },
+        {
+          "category_id": "499964",
+          "name": "Paddle Leashes",
+          "full_path": "Sporting Goods > Outdoor Recreation > Boating & Water Sports > Boating & Rafting > Paddle Leashes",
+          "description": null,
+          "similarity": 0.5724823215667092,
+          "rank": 3,
+          "source": "vector"
+        },
+        {
+          "category_id": "3426",
+          "name": "Bridles",
+          "full_path": "Sporting Goods > Outdoor Recreation > Equestrian > Horse Tack > Bridles",
+          "description": null,
+          "similarity": 0.5708835469790885,
+          "rank": 4,
+          "source": "vector"
+        },
+        {
+          "category_id": "5049",
+          "name": "Baby Safety Harnesses & Leashes",
+          "full_path": "Baby & Toddler > Baby Safety > Baby Safety Harnesses & Leashes",
+          "description": null,
+          "similarity": 0.5703677623368109,
+          "rank": 5,
+          "source": "vector"
+        },
+        {
+          "category_id": "499740",
+          "name": "Fencing Jackets & Lamés",
+          "full_path": "Sporting Goods > Athletics > Fencing > Fencing Protective Gear > Fencing Jackets & Lamés",
+          "description": null,
+          "similarity": 0.5700527259692307,
+          "rank": 6,
+          "source": "vector"
+        },
+        {
+          "category_id": "1754",
+          "name": "Reins",
+          "full_path": "Sporting Goods > Outdoor Recreation > Equestrian > Horse Tack > Reins",
+          "description": null,
+          "similarity": 0.5694381172469898,
+          "rank": 7,
+          "source": "vector"
+        },
+        {
+          "category_id": "3366",
+          "name": "Fencing Gloves & Cuffs",
+          "full_path": "Sporting Goods > Athletics > Fencing > Fencing Protective Gear > Fencing Gloves & Cuffs",
+          "description": null,
+          "similarity": 0.5675695474072748,
+          "rank": 8,
+          "source": "vector"
+        },
+        {
+          "category_id": "8046",
+          "name": "Tablecloth Clips & Weights",
+          "full_path": "Home & Garden > Kitchen & Dining > Tableware > Tablecloth Clips & Weights",
+          "description": null,
+          "similarity": 0.5663626204568846,
+          "rank": 9,
+          "source": "vector"
+        },
+        {
+          "category_id": "499681",
+          "name": "Ski & Snowboard Leashes",
+          "full_path": "Sporting Goods > Outdoor Recreation > Winter Sports & Activities > Skiing & Snowboarding > Ski & Snowboard Leashes",
+          "description": null,
+          "similarity": 0.565601843785935,
+          "rank": 10,
+          "source": "vector"
+        },
+        {
+          "category_id": "1491",
+          "name": "Cinches",
+          "full_path": "Sporting Goods > Outdoor Recreation > Equestrian > Horse Tack > Cinches",
+          "description": null,
+          "similarity": 0.565033555030887,
+          "rank": 11,
+          "source": "vector"
+        },
+        {
+          "category_id": "7372",
+          "name": "Dog Diaper Pads & Liners",
+          "full_path": "Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Diaper Pads & Liners",
+          "description": null,
+          "similarity": 0.5649685031288295,
+          "rank": 12,
+          "source": "vector"
+        },
+        {
+          "category_id": "5569",
+          "name": "Horse Boots & Leg Wraps",
+          "full_path": "Sporting Goods > Outdoor Recreation > Equestrian > Horse Care > Horse Boots & Leg Wraps",
+          "description": null,
+          "similarity": 0.5626836865702582,
+          "rank": 13,
+          "source": "vector"
+        },
+        {
+          "category_id": "3218",
+          "name": "Climbing Harnesses",
+          "full_path": "Sporting Goods > Outdoor Recreation > Climbing > Climbing Harnesses",
+          "description": null,
+          "similarity": 0.5624972432858524,
+          "rank": 14,
+          "source": "vector"
+        },
+        {
+          "category_id": "2756",
+          "name": "Horse Harnesses",
+          "full_path": "Sporting Goods > Outdoor Recreation > Equestrian > Horse Tack > Horse Harnesses",
+          "description": null,
+          "similarity": 0.5615370649562882,
+          "rank": 15,
+          "source": "vector"
+        }
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "role": "classifier",
+          "output": {
+            "category_id": "6250",
+            "confidence": 1.0,
+            "rationale": "The product is a dog harness, which falls under the category of pet supplies, specifically pet collars & harnesses.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 2373
+        },
+        {
+          "step_no": 2,
+          "role": "critic",
+          "output": {
+            "own_pick": "6250",
+            "verdict": "accept",
+            "issues": [],
+            "suggested_category_id": null,
+            "confidence": 1.0
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 2320
+        }
+      ]
+    },
+    "error": null,
+    "seconds": 4.8
+  },
+  {
+    "sample": {
+      "case": "sibling_depth",
+      "expected": "Home & Garden > Kitchen & Dining > Cookware & Bakeware > Cookware > a frying pan / skillet leaf",
+      "product": {
+        "product_id": "s-007",
+        "title": "Pre-Seasoned Cast Iron Skillet 26cm",
+        "description": "Heavy cast iron frying pan for stovetop, oven and campfire. Induction compatible.",
+        "attributes": {
+          "material": "cast iron",
+          "diameter_cm": 26
+        }
+      }
+    },
+    "response": {
+      "product_id": "s-007",
+      "final_category_id": "662",
+      "final_category_path": "Home & Garden > Kitchen & Dining > Cookware & Bakeware > Cookware > Skillets & Frying Pans",
+      "confidence": 0.91,
+      "confidence_breakdown": {
+        "self": 1.0,
+        "critic_agrees": 1.0,
+        "related_agrees": 0.0,
+        "retrieval": 0.6381041674365779
+      },
+      "decision": "auto_linked",
+      "candidates": [
+        {
+          "category_id": "662",
+          "name": "Skillets & Frying Pans",
+          "full_path": "Home & Garden > Kitchen & Dining > Cookware & Bakeware > Cookware > Skillets & Frying Pans",
+          "description": null,
+          "similarity": 0.6381041674365779,
+          "rank": 1,
+          "source": "vector"
+        },
+        {
+          "category_id": "7523",
+          "name": "Fireplace Andirons",
+          "full_path": "Home & Garden > Fireplace & Wood Stove Accessories > Fireplace Andirons",
+          "description": null,
+          "similarity": 0.6051331147155092,
+          "rank": 2,
+          "source": "vector"
+        },
+        {
+          "category_id": "764",
+          "name": "Waffle Irons",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Toasters & Grills > Waffle Irons",
+          "description": null,
+          "similarity": 0.5980792524720172,
+          "rank": 3,
+          "source": "vector"
+        },
+        {
+          "category_id": "2044",
+          "name": "Bellows",
+          "full_path": "Home & Garden > Fireplace & Wood Stove Accessories > Bellows",
+          "description": null,
+          "similarity": 0.5971720583028824,
+          "rank": 4,
+          "source": "vector"
+        },
+        {
+          "category_id": "761",
+          "name": "Countertop & Toaster Ovens",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Toasters & Grills > Countertop & Toaster Ovens",
+          "description": null,
+          "similarity": 0.5921216850208242,
+          "rank": 5,
+          "source": "vector"
+        },
+        {
+          "category_id": "503725",
+          "name": "Cooking Gel Fuels",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Appliance Accessories > Fondue Set Accessories > Cooking Gel Fuels",
+          "description": null,
+          "similarity": 0.5884353202217049,
+          "rank": 6,
+          "source": "vector"
+        },
+        {
+          "category_id": "658",
+          "name": "Griddles & Grill Pans",
+          "full_path": "Home & Garden > Kitchen & Dining > Cookware & Bakeware > Cookware > Griddles & Grill Pans",
+          "description": null,
+          "similarity": 0.587449396404661,
+          "rank": 7,
+          "source": "vector"
+        },
+        {
+          "category_id": "695",
+          "name": "Log Racks & Carriers",
+          "full_path": "Home & Garden > Fireplace & Wood Stove Accessories > Log Racks & Carriers",
+          "description": null,
+          "similarity": 0.5866710050905991,
+          "rank": 8,
+          "source": "vector"
+        },
+        {
+          "category_id": "625",
+          "name": "Firewood & Fuel",
+          "full_path": "Home & Garden > Fireplace & Wood Stove Accessories > Firewood & Fuel",
+          "description": null,
+          "similarity": 0.5846581211482369,
+          "rank": 9,
+          "source": "vector"
+        },
+        {
+          "category_id": "1995",
+          "name": "Solder & Flux",
+          "full_path": "Hardware > Building Consumables > Solder & Flux",
+          "description": null,
+          "similarity": 0.5829250836514238,
+          "rank": 10,
+          "source": "vector"
+        },
+        {
+          "category_id": "7109",
+          "name": "Fireplace Reflectors",
+          "full_path": "Home & Garden > Fireplace & Wood Stove Accessories > Fireplace Reflectors",
+          "description": null,
+          "similarity": 0.5808040153501035,
+          "rank": 11,
+          "source": "vector"
+        },
+        {
+          "category_id": "1016",
+          "name": "Camping Cookware & Dinnerware",
+          "full_path": "Sporting Goods > Outdoor Recreation > Camping & Hiking > Camping Cookware & Dinnerware",
+          "description": null,
+          "similarity": 0.580726152442078,
+          "rank": 12,
+          "source": "vector"
+        },
+        {
+          "category_id": "4720",
+          "name": "Fondue Pots & Sets",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Fondue Pots & Sets",
+          "description": null,
+          "similarity": 0.5777117358274313,
+          "rank": 13,
+          "source": "vector"
+        },
+        {
+          "category_id": "500004",
+          "name": "Cooktop, Oven & Range Accessories",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Appliance Accessories > Cooktop, Oven & Range Accessories",
+          "description": null,
+          "similarity": 0.5775613281203941,
+          "rank": 14,
+          "source": "vector"
+        },
+        {
+          "category_id": "1015",
+          "name": "Portable Cooking Stoves",
+          "full_path": "Home & Garden > Kitchen & Dining > Kitchen Appliances > Portable Cooking Stoves",
+          "description": null,
+          "similarity": 0.577243983745575,
+          "rank": 15,
+          "source": "vector"
+        }
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "role": "classifier",
+          "output": {
+            "category_id": "662",
+            "confidence": 1.0,
+            "rationale": "The product is a pre-seasoned cast iron skillet, which falls under the category of cookware and frying pans in the kitchen & dining section.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 2414
+        },
+        {
+          "step_no": 2,
+          "role": "critic",
+          "output": {
+            "own_pick": "662",
+            "verdict": "accept",
+            "issues": [],
+            "suggested_category_id": null,
+            "confidence": 1.0
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 2284
+        }
+      ]
+    },
+    "error": null,
+    "seconds": 4.8
+  },
+  {
+    "sample": {
+      "case": "variant",
+      "expected": "Same category as s-007 (base product). Re-run after s-007 is linked to test the sibling path.",
+      "product": {
+        "product_id": "s-007-30",
+        "title": "Pre-Seasoned Cast Iron Skillet 30cm",
+        "attributes": {
+          "material": "cast iron",
+          "diameter_cm": 30
+        },
+        "base_product_id": "s-007"
+      }
+    },
+    "response": {
+      "product_id": "s-007-30",
+      "final_category_id": "662",
+      "final_category_path": "Home & Garden > Kitchen & Dining > Cookware & Bakeware > Cookware > Skillets & Frying Pans",
+      "confidence": 0.9,
+      "confidence_breakdown": {
+        "self": 1.0,
+        "critic_agrees": 1.0,
+        "related_agrees": 0.0,
+        "retrieval": 0.6013166546037331
+      },
+      "decision": "auto_linked",
+      "candidates": [
+        {
+          "category_id": "1236",
+          "name": "Soldering Irons",
+          "full_path": "Hardware > Tools > Soldering Irons",
+          "description": null,
+          "similarity": 0.6013219948644754,
+          "rank": 1,
+          "source": "vector"
+        },
+        {
+          "category_id": "662",
+          "name": "Skillets & Frying Pans",
+          "full_path": "Home & Garden > Kitchen & Dining > Cookware & Bakeware > Cookware > Skillets & Frying Pans",
+          "description": null,
+          "similarity": 0.6013166546037331,
+          "rank": 2,
+          "source": "vector"
+        },
+        {
+          "category_id": "2282",
+          "name": "Cement, Mortar & Concrete Mixes",
+          "full_path": "Hardware > Building Consumables > Masonry Consumables > Cement, Mortar & Concrete Mixes",
+          "description": null,
+          "similarity": 0.5914246683464167,
+          "rank": 3,
+          "source": "vector"
+        },
+        {
+          "category_id": "7553",
+          "name": "Tilt Skillets",
+          "full_path": "Business & Industrial > Food Service > Tilt Skillets",
+          "description": null,
+          "similarity": 0.5912298803789009,
+          "rank": 4,
+          "source": "vector"
+        },
+        {
+          "category_id": "489",
+          "name": "Curling Irons",
+          "full_path": "Health & Beauty > Personal Care > Hair Care > Hair Styling Tools > Curling Irons",
+          "description": null,
+          "similarity": 0.5851720222728749,
+          "rank": 5,
+          "source": "vector"
+        },
+        {
+          "category_id": "7112",
+          "name": "Molding",
+          "full_path": "Hardware > Building Materials > Molding",
+          "description": null,
+          "similarity": 0.5783360851803279,
+          "rank": 6,
+          "source": "vector"
+        },
+        {
+          "category_id": "1995",
+          "name": "Solder & Flux",
+          "full_path": "Hardware > Building Consumables > Solder & Flux",
+          "description": null,
+          "similarity": 0.5759450044418891,
+          "rank": 7,
+          "source": "vector"
+        },
+        {
+          "category_id": "2058",
+          "name": "Primers",
+          "full_path": "Hardware > Building Consumables > Painting Consumables > Primers",
+          "description": null,
+          "similarity": 0.5714579480017952,
+          "rank": 8,
+          "source": "vector"
+        },
+        {
+          "category_id": "505802",
+          "name": "Wall Patching Compounds & Plaster",
+          "full_path": "Hardware > Building Consumables > Wall Patching Compounds & Plaster",
+          "description": null,
+          "similarity": 0.5693178681486463,
+          "rank": 9,
+          "source": "vector"
+        },
+        {
+          "category_id": "5765",
+          "name": "Shortening & Lard",
+          "full_path": "Food, Beverages & Tobacco > Food Items > Cooking & Baking Ingredients > Shortening & Lard",
+          "description": null,
+          "similarity": 0.5690886799851771,
+          "rank": 10,
+          "source": "vector"
+        },
+        {
+          "category_id": "503741",
+          "name": "Solvents, Strippers & Thinners",
+          "full_path": "Hardware > Building Consumables > Solvents, Strippers & Thinners",
+          "description": null,
+          "similarity": 0.5674468697512604,
+          "rank": 11,
+          "source": "vector"
+        },
+        {
+          "category_id": "503777",
+          "name": "Rebar & Remesh",
+          "full_path": "Hardware > Building Materials > Rebar & Remesh",
+          "description": null,
+          "similarity": 0.5671678781509762,
+          "rank": 12,
+          "source": "vector"
+        },
+        {
+          "category_id": "2729",
+          "name": "Countertops",
+          "full_path": "Hardware > Building Materials > Countertops",
+          "description": null,
+          "similarity": 0.5653305209471078,
+          "rank": 13,
+          "source": "vector"
+        },
+        {
+          "category_id": "7136",
+          "name": "Wall & Ceiling Tile",
+          "full_path": "Hardware > Building Materials > Wall & Ceiling Tile",
+          "description": null,
+          "similarity": 0.5645466860318309,
+          "rank": 14,
+          "source": "vector"
+        },
+        {
+          "category_id": "505300",
+          "name": "Weather Stripping & Weatherization Supplies",
+          "full_path": "Hardware > Building Materials > Weather Stripping & Weatherization Supplies",
+          "description": null,
+          "similarity": 0.5628782510757806,
+          "rank": 15,
+          "source": "vector"
+        }
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "role": "classifier",
+          "output": {
+            "category_id": "662",
+            "confidence": 1.0,
+            "rationale": "The product is a pre-seasoned cast iron skillet with a diameter of 30cm, which falls under the category of cookware and frying pans in the Home & Garden > Kitchen & Dining section.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 2507
+        },
+        {
+          "step_no": 2,
+          "role": "critic",
+          "output": {
+            "own_pick": "662",
+            "verdict": "accept",
+            "issues": [],
+            "suggested_category_id": null,
+            "confidence": 1.0
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 2064
+        }
+      ]
+    },
+    "error": null,
+    "seconds": 4.7
+  },
+  {
+    "sample": {
+      "case": "ambiguous",
+      "expected": "Electronics (smart watch) vs Apparel & Accessories > Jewelry > Watches. Either is defensible; watch the critic.",
+      "product": {
+        "product_id": "s-008",
+        "title": "Fitness Smartwatch with Heart Rate and GPS",
+        "description": "Tracks steps, sleep and SpO2, receives phone notifications, 7-day battery, 5 ATM water resistant."
+      }
+    },
+    "response": {
+      "product_id": "s-008",
+      "final_category_id": "5693",
+      "final_category_path": "Sporting Goods > Exercise & Fitness > Stopwatches",
+      "confidence": 0.393,
+      "confidence_breakdown": {
+        "self": 0.95,
+        "critic_agrees": 0.0,
+        "related_agrees": 0.0,
+        "retrieval": 0.6200259286188444
+      },
+      "decision": "unclassified",
+      "candidates": [
+        {
+          "category_id": "997",
+          "name": "Treadmills",
+          "full_path": "Sporting Goods > Exercise & Fitness > Cardio > Cardio Machines > Treadmills",
+          "description": null,
+          "similarity": 0.62206375857679,
+          "rank": 1,
+          "source": "vector"
+        },
+        {
+          "category_id": "3111",
+          "name": "Lancing Devices",
+          "full_path": "Health & Beauty > Health Care > Biometric Monitor Accessories > Blood Glucose Meter Accessories > Lancing Devices",
+          "description": null,
+          "similarity": 0.6209950262011715,
+          "rank": 2,
+          "source": "vector"
+        },
+        {
+          "category_id": "4767",
+          "name": "Prenatal Heart Rate Monitors",
+          "full_path": "Health & Beauty > Health Care > Biometric Monitors > Prenatal Heart Rate Monitors",
+          "description": null,
+          "similarity": 0.6206732803382627,
+          "rank": 3,
+          "source": "vector"
+        },
+        {
+          "category_id": "5693",
+          "name": "Stopwatches",
+          "full_path": "Sporting Goods > Exercise & Fitness > Stopwatches",
+          "description": null,
+          "similarity": 0.6200259286188444,
+          "rank": 4,
+          "source": "vector"
+        },
+        {
+          "category_id": "500009",
+          "name": "Activity Monitors",
+          "full_path": "Health & Beauty > Health Care > Biometric Monitors > Activity Monitors",
+          "description": null,
+          "similarity": 0.618576939574805,
+          "rank": 5,
+          "source": "vector"
+        },
+        {
+          "category_id": "505819",
+          "name": "Activity Monitor Accessories",
+          "full_path": "Health & Beauty > Health Care > Biometric Monitor Accessories > Activity Monitor Accessories",
+          "description": null,
+          "similarity": 0.6141736690453856,
+          "rank": 6,
+          "source": "vector"
+        },
+        {
+          "category_id": "2633",
+          "name": "Breathalyzers",
+          "full_path": "Health & Beauty > Health Care > Biometric Monitors > Breathalyzers",
+          "description": null,
+          "similarity": 0.6099786880734744,
+          "rank": 7,
+          "source": "vector"
+        },
+        {
+          "category_id": "5551",
+          "name": "Pulse Oximeters",
+          "full_path": "Health & Beauty > Health Care > Biometric Monitors > Pulse Oximeters",
+          "description": null,
+          "similarity": 0.6063170125608454,
+          "rank": 8,
+          "source": "vector"
+        },
+        {
+          "category_id": "499699",
+          "name": "Treadmill Accessories",
+          "full_path": "Sporting Goods > Exercise & Fitness > Cardio > Cardio Machine Accessories > Treadmill Accessories",
+          "description": null,
+          "similarity": 0.6047087034771228,
+          "rank": 9,
+          "source": "vector"
+        },
+        {
+          "category_id": "6323",
+          "name": "Blood Glucose Control Solution",
+          "full_path": "Health & Beauty > Health Care > Biometric Monitor Accessories > Blood Glucose Meter Accessories > Blood Glucose Control Solution",
+          "description": null,
+          "similarity": 0.5945767937474553,
+          "rank": 10,
+          "source": "vector"
+        },
+        {
+          "category_id": "5072",
+          "name": "Body Weight Scale Accessories",
+          "full_path": "Health & Beauty > Health Care > Biometric Monitor Accessories > Body Weight Scale Accessories",
+          "description": null,
+          "similarity": 0.5929778859271172,
+          "rank": 11,
+          "source": "vector"
+        },
+        {
+          "category_id": "495",
+          "name": "Blood Pressure Monitors",
+          "full_path": "Health & Beauty > Health Care > Biometric Monitors > Blood Pressure Monitors",
+          "description": null,
+          "similarity": 0.5831478312777642,
+          "rank": 12,
+          "source": "vector"
+        },
+        {
+          "category_id": "543610",
+          "name": "Stair Climbers",
+          "full_path": "Sporting Goods > Exercise & Fitness > Cardio > Cardio Machines > Stair Climbers & Steppers > Stair Climbers",
+          "description": null,
+          "similarity": 0.5831072156695488,
+          "rank": 13,
+          "source": "vector"
+        },
+        {
+          "category_id": "8062",
+          "name": "Speed & Resistance Parachutes",
+          "full_path": "Sporting Goods > Exercise & Fitness > Speed & Resistance Parachutes",
+          "description": null,
+          "similarity": 0.5830892870096269,
+          "rank": 14,
+          "source": "vector"
+        },
+        {
+          "category_id": "6242",
+          "name": "Nutrition Gels & Chews",
+          "full_path": "Health & Beauty > Health Care > Fitness & Nutrition > Nutrition Gels & Chews",
+          "description": null,
+          "similarity": 0.5799545568187162,
+          "rank": 15,
+          "source": "vector"
+        }
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "role": "classifier",
+          "output": {
+            "category_id": "5693",
+            "confidence": 0.95,
+            "rationale": "The product is described as a fitness smartwatch that tracks various health metrics such as heart rate, steps, and sleep. It also has GPS and notification features. This aligns most closely with the 'Activity Monitors' category, which is under 'Biometric Monitors' in the 'Health & Beauty > Health Care' section.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 3057
+        },
+        {
+          "step_no": 2,
+          "role": "critic",
+          "output": {
+            "own_pick": "500009",
+            "verdict": "accept",
+            "issues": [],
+            "suggested_category_id": "500009",
+            "confidence": 0.95
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 2486
+        }
+      ]
+    },
+    "error": null,
+    "seconds": 5.7
+  },
+  {
+    "sample": {
+      "case": "ambiguous",
+      "expected": "Laptop sleeve: electronics accessory vs bags & luggage. Watch the alternates.",
+      "product": {
+        "product_id": "s-009",
+        "title": "14-inch Neoprene Laptop Sleeve",
+        "description": "Slim padded sleeve with zip, fits most 13-14 inch laptops and tablets."
+      }
+    },
+    "response": {
+      "product_id": "s-009",
+      "final_category_id": null,
+      "final_category_path": null,
+      "confidence": 0.0,
+      "confidence_breakdown": {},
+      "decision": "failed",
+      "candidates": [
+        {
+          "category_id": "4270",
+          "name": "Laptop Housings & Trim",
+          "full_path": "Electronics > Electronics Accessories > Computer Components > Laptop Parts > Laptop Housings & Trim",
+          "description": null,
+          "similarity": 0.6111966785432509,
+          "rank": 1,
+          "source": "vector"
+        },
+        {
+          "category_id": "503002",
+          "name": "Tablet Computer Housings & Trim",
+          "full_path": "Electronics > Electronics Accessories > Computer Components > Tablet Computer Parts > Tablet Computer Housings & Trim",
+          "description": null,
+          "similarity": 0.5909596220923409,
+          "rank": 2,
+          "source": "vector"
+        },
+        {
+          "category_id": "8158",
+          "name": "Computer Backplates & I/O Shields",
+          "full_path": "Electronics > Electronics Accessories > Computer Components > Computer Backplates & I/O Shields",
+          "description": null,
+          "similarity": 0.5834196607066175,
+          "rank": 3,
+          "source": "vector"
+        },
+        {
+          "category_id": "7530",
+          "name": "Computer Covers & Skins",
+          "full_path": "Electronics > Electronics Accessories > Computer Accessories > Computer Covers & Skins",
+          "description": null,
+          "similarity": 0.5831749737829105,
+          "rank": 4,
+          "source": "vector"
+        },
+        {
+          "category_id": "8160",
+          "name": "Laptop Screen Digitizers",
+          "full_path": "Electronics > Electronics Accessories > Computer Components > Laptop Parts > Laptop Screen Digitizers",
+          "description": null,
+          "similarity": 0.5815190381339693,
+          "rank": 5,
+          "source": "vector"
+        },
+        {
+          "category_id": "6780",
+          "name": "Wire & Cable Sleeves",
+          "full_path": "Electronics > Electronics Accessories > Cable Management > Wire & Cable Sleeves",
+          "description": null,
+          "similarity": 0.5798016190529529,
+          "rank": 6,
+          "source": "vector"
+        },
+        {
+          "category_id": "6416",
+          "name": "Laptop Hinges",
+          "full_path": "Electronics > Electronics Accessories > Computer Components > Laptop Parts > Laptop Hinges",
+          "description": null,
+          "similarity": 0.574911695739835,
+          "rank": 7,
+          "source": "vector"
+        },
+        {
+          "category_id": "499956",
+          "name": "Tablet Computer Docks & Stands",
+          "full_path": "Electronics > Electronics Accessories > Computer Accessories > Tablet Computer Docks & Stands",
+          "description": null,
+          "similarity": 0.5700388300280027,
+          "rank": 8,
+          "source": "vector"
+        },
+        {
+          "category_id": "503741",
+          "name": "Solvents, Strippers & Thinners",
+          "full_path": "Hardware > Building Consumables > Solvents, Strippers & Thinners",
+          "description": null,
+          "similarity": 0.5691652729117381,
+          "rank": 9,
+          "source": "vector"
+        },
+        {
+          "category_id": "500013",
+          "name": "Tablet Computer Screens & Screen Digitizers",
+          "full_path": "Electronics > Electronics Accessories > Computer Components > Tablet Computer Parts > Tablet Computer Screens & Screen Digitizers",
+          "description": null,
+          "similarity": 0.5674099165416124,
+          "rank": 10,
+          "source": "vector"
+        },
+        {
+          "category_id": "4521",
+          "name": "Can & Bottle Sleeves",
+          "full_path": "Home & Garden > Kitchen & Dining > Food & Beverage Carriers > Drink Sleeves > Can & Bottle Sleeves",
+          "description": null,
+          "similarity": 0.5652171658434078,
+          "rank": 11,
+          "source": "vector"
+        },
+        {
+          "category_id": "293",
+          "name": "Computer Racks & Mounts",
+          "full_path": "Electronics > Electronics Accessories > Computer Components > Computer Racks & Mounts",
+          "description": null,
+          "similarity": 0.5648029474246136,
+          "rank": 12,
+          "source": "vector"
+        },
+        {
+          "category_id": "3111",
+          "name": "Lancing Devices",
+          "full_path": "Health & Beauty > Health Care > Biometric Monitor Accessories > Blood Glucose Meter Accessories > Lancing Devices",
+          "description": null,
+          "similarity": 0.5646891362586767,
+          "rank": 13,
+          "source": "vector"
+        },
+        {
+          "category_id": "300",
+          "name": "Laptop Docking Stations",
+          "full_path": "Electronics > Electronics Accessories > Computer Accessories > Laptop Docking Stations",
+          "description": null,
+          "similarity": 0.5610900971674847,
+          "rank": 14,
+          "source": "vector"
+        },
+        {
+          "category_id": "8015",
+          "name": "Laminating Film, Pouches & Sheets",
+          "full_path": "Office Supplies > General Office Supplies > Laminating Film, Pouches & Sheets",
+          "description": null,
+          "similarity": 0.5604074119307453,
+          "rank": 15,
+          "source": "vector"
+        }
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "role": "classifier",
+          "output": {
+            "category_id": "+7530 | Electronics > Electronics Accessories > Computer Accessories > Computer Covers & Skins",
+            "confidence": 0.95,
+            "rationale": "The product description mentions a laptop sleeve, which falls under the category of computer covers and skins.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": false,
+          "error": "id '+7530 | Electronics > Electronics Accessories > Computer Accessories > Computer Covers & Skins' not in candidates",
+          "latency_ms": 2429
+        },
+        {
+          "step_no": 2,
+          "role": "classifier",
+          "output": {
+            "category_id": "+7530 | Electronics > Electronics Accessories > Computer Accessories > Computer Covers & Skins",
+            "confidence": 0.95,
+            "rationale": "The product description mentions a laptop sleeve, which falls under the category of computer covers and skins.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": false,
+          "error": "id '+7530 | Electronics > Electronics Accessories > Computer Accessories > Computer Covers & Skins' not in candidates",
+          "latency_ms": 1390
+        }
+      ]
+    },
+    "error": null,
+    "seconds": 3.9
+  },
+  {
+    "sample": {
+      "case": "ambiguous",
+      "expected": "Sporting Goods > Exercise & Fitness > Yoga & Pilates > mat leaf",
+      "product": {
+        "product_id": "s-010",
+        "title": "Non-Slip TPE Exercise Mat 6mm",
+        "description": "For yoga, pilates and floor workouts. Includes carry strap."
+      }
+    },
+    "response": {
+      "product_id": "s-010",
+      "final_category_id": "3640",
+      "final_category_path": "Sporting Goods > Exercise & Fitness > Yoga & Pilates > Yoga & Pilates Mats",
+      "confidence": 0.909,
+      "confidence_breakdown": {
+        "self": 0.95,
+        "critic_agrees": 1.0,
+        "related_agrees": 0.0,
+        "retrieval": 0.6855452128214405
+      },
+      "decision": "auto_linked",
+      "candidates": [
+        {
+          "category_id": "5107",
+          "name": "Yoga Mat Bags & Straps",
+          "full_path": "Sporting Goods > Exercise & Fitness > Yoga & Pilates > Yoga Mat Bags & Straps",
+          "description": null,
+          "similarity": 0.7167669186692233,
+          "rank": 1,
+          "source": "vector"
+        },
+        {
+          "category_id": "3640",
+          "name": "Yoga & Pilates Mats",
+          "full_path": "Sporting Goods > Exercise & Fitness > Yoga & Pilates > Yoga & Pilates Mats",
+          "description": null,
+          "similarity": 0.6855452128214405,
+          "rank": 2,
+          "source": "vector"
+        },
+        {
+          "category_id": "6743",
+          "name": "Yoga & Pilates Towels",
+          "full_path": "Sporting Goods > Exercise & Fitness > Yoga & Pilates > Yoga & Pilates Towels",
+          "description": null,
+          "similarity": 0.6587945019480582,
+          "rank": 3,
+          "source": "vector"
+        },
+        {
+          "category_id": "6750",
+          "name": "Yoga & Pilates Blocks",
+          "full_path": "Sporting Goods > Exercise & Fitness > Yoga & Pilates > Yoga & Pilates Blocks",
+          "description": null,
+          "similarity": 0.6513280660705895,
+          "rank": 4,
+          "source": "vector"
+        },
+        {
+          "category_id": "3810",
+          "name": "Pilates Machines",
+          "full_path": "Sporting Goods > Exercise & Fitness > Yoga & Pilates > Pilates Machines",
+          "description": null,
+          "similarity": 0.6415143305421074,
+          "rank": 5,
+          "source": "vector"
+        },
+        {
+          "category_id": "499903",
+          "name": "Exercise & Gym Mat Storage Racks & Carts",
+          "full_path": "Sporting Goods > Athletics > General Purpose Athletic Equipment > Exercise & Gym Mat Storage Racks & Carts",
+          "description": null,
+          "similarity": 0.6105602879334109,
+          "rank": 6,
+          "source": "vector"
+        },
+        {
+          "category_id": "7223",
+          "name": "Bicycle Toe Straps & Clips",
+          "full_path": "Sporting Goods > Outdoor Recreation > Cycling > Bicycle Accessories > Bicycle Toe Straps & Clips",
+          "description": null,
+          "similarity": 0.6056701196837754,
+          "rank": 7,
+          "source": "vector"
+        },
+        {
+          "category_id": "499700",
+          "name": "Stair Climber & Stepper Accessories",
+          "full_path": "Sporting Goods > Exercise & Fitness > Cardio > Cardio Machine Accessories > Stair Climber & Stepper Accessories",
+          "description": null,
+          "similarity": 0.6039334491233482,
+          "rank": 8,
+          "source": "vector"
+        },
+        {
+          "category_id": "543611",
+          "name": "Stair Steppers",
+          "full_path": "Sporting Goods > Exercise & Fitness > Cardio > Cardio Machines > Stair Climbers & Steppers > Stair Steppers",
+          "description": null,
+          "similarity": 0.6033207064844538,
+          "rank": 9,
+          "source": "vector"
+        },
+        {
+          "category_id": "4669",
+          "name": "Exercise Equipment Mats",
+          "full_path": "Sporting Goods > Exercise & Fitness > Exercise Equipment Mats",
+          "description": null,
+          "similarity": 0.6023407341445197,
+          "rank": 10,
+          "source": "vector"
+        },
+        {
+          "category_id": "543610",
+          "name": "Stair Climbers",
+          "full_path": "Sporting Goods > Exercise & Fitness > Cardio > Cardio Machines > Stair Climbers & Steppers > Stair Climbers",
+          "description": null,
+          "similarity": 0.5929150934765062,
+          "rank": 11,
+          "source": "vector"
+        },
+        {
+          "category_id": "499699",
+          "name": "Treadmill Accessories",
+          "full_path": "Sporting Goods > Exercise & Fitness > Cardio > Cardio Machine Accessories > Treadmill Accessories",
+          "description": null,
+          "similarity": 0.5745346051938296,
+          "rank": 12,
+          "source": "vector"
+        },
+        {
+          "category_id": "6486",
+          "name": "Fingertip Grips",
+          "full_path": "Office Supplies > Paper Handling > Fingertip Grips",
+          "description": null,
+          "similarity": 0.5722365720413326,
+          "rank": 13,
+          "source": "vector"
+        },
+        {
+          "category_id": "5877",
+          "name": "Air Suits",
+          "full_path": "Sporting Goods > Outdoor Recreation > Hang Gliding & Skydiving > Air Suits",
+          "description": null,
+          "similarity": 0.5716925689624465,
+          "rank": 14,
+          "source": "vector"
+        },
+        {
+          "category_id": "499726",
+          "name": "Boxing & MMA Hand Wraps",
+          "full_path": "Sporting Goods > Athletics > Boxing & Martial Arts > Boxing & Martial Arts Protective Gear > Boxing & MMA Hand Wraps",
+          "description": null,
+          "similarity": 0.5716898016190096,
+          "rank": 15,
+          "source": "vector"
+        }
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "role": "classifier",
+          "output": {
+            "category_id": "3640",
+            "confidence": 0.95,
+            "rationale": "The product description mentions that the mat is for yoga, pilates, and floor workouts, which aligns with the category 'Yoga & Pilates Mats'. The carry strap is a common feature of yoga mats, further supporting this classification.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 2698
+        },
+        {
+          "step_no": 2,
+          "role": "critic",
+          "output": {
+            "own_pick": "3640",
+            "verdict": "accept",
+            "issues": [],
+            "suggested_category_id": "3640",
+            "confidence": 0.95
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 2415
+        }
+      ]
+    },
+    "error": null,
+    "seconds": 5.2
+  },
+  {
+    "sample": {
+      "case": "poor_data",
+      "expected": "Unclear on purpose. A good result is low confidence and a review decision, not a confident guess.",
+      "product": {
+        "product_id": "s-011",
+        "title": "X-200 Pro",
+        "attributes": {
+          "colour": "grey",
+          "voltage": "240V"
+        }
+      }
+    },
+    "response": {
+      "product_id": "s-011",
+      "final_category_id": null,
+      "final_category_path": null,
+      "confidence": 0.0,
+      "confidence_breakdown": {},
+      "decision": "failed",
+      "candidates": [
+        {
+          "category_id": "7183",
+          "name": "Ballasts & Starters",
+          "full_path": "Hardware > Power & Electrical Supplies > Ballasts & Starters",
+          "description": null,
+          "similarity": 0.48171898831612714,
+          "rank": 1,
+          "source": "vector"
+        },
+        {
+          "category_id": "499893",
+          "name": "Carbon Brushes",
+          "full_path": "Hardware > Power & Electrical Supplies > Carbon Brushes",
+          "description": null,
+          "similarity": 0.4763531684875624,
+          "rank": 2,
+          "source": "vector"
+        },
+        {
+          "category_id": "5516",
+          "name": "Color Calibrators",
+          "full_path": "Electronics > Video > Video Accessories > Computer Monitor Accessories > Color Calibrators",
+          "description": null,
+          "similarity": 0.4714644270262539,
+          "rank": 3,
+          "source": "vector"
+        },
+        {
+          "category_id": "500088",
+          "name": "Lighter Fluid",
+          "full_path": "Hardware > Building Consumables > Chemicals > Lighter Fluid",
+          "description": null,
+          "similarity": 0.47013549262593257,
+          "rank": 4,
+          "source": "vector"
+        },
+        {
+          "category_id": "3324",
+          "name": "Sustain Pedals",
+          "full_path": "Arts & Entertainment > Hobbies & Creative Arts > Musical Instrument & Orchestra Accessories > Musical Keyboard Accessories > Sustain Pedals",
+          "description": null,
+          "similarity": 0.4663766662625506,
+          "rank": 5,
+          "source": "vector"
+        },
+        {
+          "category_id": "1648",
+          "name": "Stains",
+          "full_path": "Hardware > Building Consumables > Painting Consumables > Stains",
+          "description": null,
+          "similarity": 0.4649863596224558,
+          "rank": 6,
+          "source": "vector"
+        },
+        {
+          "category_id": "505318",
+          "name": "Voltage Transformers & Regulators",
+          "full_path": "Hardware > Power & Electrical Supplies > Voltage Transformers & Regulators",
+          "description": null,
+          "similarity": 0.4640183258002033,
+          "rank": 7,
+          "source": "vector"
+        },
+        {
+          "category_id": "499928",
+          "name": "General Purpose Battery Testers",
+          "full_path": "Electronics > Electronics Accessories > Power > Battery Accessories > General Purpose Battery Testers",
+          "description": null,
+          "similarity": 0.4629180751491815,
+          "rank": 8,
+          "source": "vector"
+        },
+        {
+          "category_id": "2377",
+          "name": "Wall Plates & Covers",
+          "full_path": "Hardware > Power & Electrical Supplies > Wall Plates & Covers",
+          "description": null,
+          "similarity": 0.4621642873091387,
+          "rank": 9,
+          "source": "vector"
+        },
+        {
+          "category_id": "1361",
+          "name": "Paint",
+          "full_path": "Hardware > Building Consumables > Painting Consumables > Paint",
+          "description": null,
+          "similarity": 0.46197755504457505,
+          "rank": 10,
+          "source": "vector"
+        },
+        {
+          "category_id": "2490",
+          "name": "Lighting Filters & Gobos",
+          "full_path": "Cameras & Optics > Photography > Lighting & Studio > Studio Lighting Controls > Lighting Filters & Gobos",
+          "description": null,
+          "similarity": 0.46160254340141815,
+          "rank": 11,
+          "source": "vector"
+        },
+        {
+          "category_id": "398",
+          "name": "Overhead Projectors",
+          "full_path": "Electronics > Video > Projectors > Overhead Projectors",
+          "description": null,
+          "similarity": 0.45948803907775737,
+          "rank": 12,
+          "source": "vector"
+        },
+        {
+          "category_id": "499932",
+          "name": "Specialty Electrical Switches & Relays",
+          "full_path": "Hardware > Power & Electrical Supplies > Electrical Switches > Specialty Electrical Switches & Relays",
+          "description": null,
+          "similarity": 0.45745409295783845,
+          "rank": 13,
+          "source": "vector"
+        },
+        {
+          "category_id": "2164",
+          "name": "Carbon Monoxide Detectors",
+          "full_path": "Home & Garden > Flood, Fire & Gas Safety > Smoke & Carbon Monoxide Detectors > Carbon Monoxide Detectors",
+          "description": null,
+          "similarity": 0.4573957920074593,
+          "rank": 14,
+          "source": "vector"
+        },
+        {
+          "category_id": "2058",
+          "name": "Primers",
+          "full_path": "Hardware > Building Consumables > Painting Consumables > Primers",
+          "description": null,
+          "similarity": 0.4564138806770307,
+          "rank": 15,
+          "source": "vector"
+        }
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "role": "classifier",
+          "output": {
+            "category_id": "id=505318 | Hardware > Power & Electrical Supplies > Voltage Transformers & Regulators",
+            "confidence": 0.85,
+            "rationale": "The product title 'X-200 Pro' and the attribute 'voltage: 240V' suggest that this is likely an electrical device that might require voltage regulation or transformation, fitting the category of Voltage Transformers & Regulators.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": false,
+          "error": "id 'id=505318 | Hardware > Power & Electrical Supplies > Voltage Transformers & Regulators' not in candidates",
+          "latency_ms": 3028
+        },
+        {
+          "step_no": 2,
+          "role": "classifier",
+          "output": {
+            "category_id": "id=505318 | Hardware > Power & Electrical Supplies > Voltage Transformers & Regulators",
+            "confidence": 0.85,
+            "rationale": "The product title 'X-200 Pro' and the attribute 'voltage: 240V' suggest that this is likely an electrical device that might require voltage regulation or transformation, fitting the category of Voltage Transformers & Regulators.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": false,
+          "error": "id 'id=505318 | Hardware > Power & Electrical Supplies > Voltage Transformers & Regulators' not in candidates",
+          "latency_ms": 2078
+        }
+      ]
+    },
+    "error": null,
+    "seconds": 5.2
+  },
+  {
+    "sample": {
+      "case": "poor_data",
+      "expected": "Gift card: probably a party/gift-giving leaf, if the taxonomy has one. Tests 'nothing fits well'.",
+      "product": {
+        "product_id": "s-012",
+        "title": "$50 Store Gift Card",
+        "price": {
+          "amount": "50.00",
+          "currency": "AUD"
+        }
+      }
+    },
+    "response": {
+      "product_id": "s-012",
+      "final_category_id": "53",
+      "final_category_path": "Arts & Entertainment > Party & Celebration > Gift Giving > Gift Cards & Certificates",
+      "confidence": 0.37,
+      "confidence_breakdown": {
+        "self": 1.0,
+        "critic_agrees": 0.0,
+        "related_agrees": 0.0,
+        "retrieval": 0.4781559874275987
+      },
+      "decision": "unclassified",
+      "candidates": [
+        {
+          "category_id": "5264",
+          "name": "Blank ID Cards",
+          "full_path": "Office Supplies > General Office Supplies > Paper Products > Blank ID Cards",
+          "description": null,
+          "similarity": 0.5130055165617318,
+          "rank": 1,
+          "source": "vector"
+        },
+        {
+          "category_id": "95",
+          "name": "Greeting & Note Cards",
+          "full_path": "Arts & Entertainment > Party & Celebration > Gift Giving > Greeting & Note Cards",
+          "description": null,
+          "similarity": 0.49369284473018915,
+          "rank": 2,
+          "source": "vector"
+        },
+        {
+          "category_id": "959",
+          "name": "Index Cards",
+          "full_path": "Office Supplies > General Office Supplies > Paper Products > Index Cards",
+          "description": null,
+          "similarity": 0.49196954239051927,
+          "rank": 3,
+          "source": "vector"
+        },
+        {
+          "category_id": "2104",
+          "name": "Place Cards",
+          "full_path": "Arts & Entertainment > Party & Celebration > Party Supplies > Place Cards",
+          "description": null,
+          "similarity": 0.4887631687890559,
+          "rank": 4,
+          "source": "vector"
+        },
+        {
+          "category_id": "5472",
+          "name": "Place Card Holders",
+          "full_path": "Arts & Entertainment > Party & Celebration > Party Supplies > Place Card Holders",
+          "description": null,
+          "similarity": 0.4882845275571661,
+          "rank": 5,
+          "source": "vector"
+        },
+        {
+          "category_id": "328061",
+          "name": "Advice Cards",
+          "full_path": "Arts & Entertainment > Party & Celebration > Party Supplies > Advice Cards",
+          "description": null,
+          "similarity": 0.48706386944841973,
+          "rank": 6,
+          "source": "vector"
+        },
+        {
+          "category_id": "5070",
+          "name": "Greeting Card Organizers",
+          "full_path": "Office Supplies > Filing & Organization > Greeting Card Organizers",
+          "description": null,
+          "similarity": 0.4856845591758343,
+          "rank": 7,
+          "source": "vector"
+        },
+        {
+          "category_id": "3871",
+          "name": "Post Cards",
+          "full_path": "Office Supplies > General Office Supplies > Paper Products > Post Cards",
+          "description": null,
+          "similarity": 0.48372421431137425,
+          "rank": 8,
+          "source": "vector"
+        },
+        {
+          "category_id": "1887",
+          "name": "Response Cards",
+          "full_path": "Arts & Entertainment > Party & Celebration > Party Supplies > Response Cards",
+          "description": null,
+          "similarity": 0.4832999890119034,
+          "rank": 9,
+          "source": "vector"
+        },
+        {
+          "category_id": "505808",
+          "name": "Credit Card Terminals",
+          "full_path": "Business & Industrial > Retail > Money Handling > Cash Register & POS Terminal Accessories > Credit Card Terminals",
+          "description": null,
+          "similarity": 0.4827720060442693,
+          "rank": 10,
+          "source": "vector"
+        },
+        {
+          "category_id": "53",
+          "name": "Gift Cards & Certificates",
+          "full_path": "Arts & Entertainment > Party & Celebration > Gift Giving > Gift Cards & Certificates",
+          "description": null,
+          "similarity": 0.4781559874275987,
+          "rank": 11,
+          "source": "vector"
+        },
+        {
+          "category_id": "957",
+          "name": "Business Cards",
+          "full_path": "Office Supplies > General Office Supplies > Paper Products > Business Cards",
+          "description": null,
+          "similarity": 0.47775058382006264,
+          "rank": 12,
+          "source": "vector"
+        },
+        {
+          "category_id": "5310",
+          "name": "Signature Capture Pads",
+          "full_path": "Business & Industrial > Retail > Money Handling > Cash Register & POS Terminal Accessories > Signature Capture Pads",
+          "description": null,
+          "similarity": 0.47745635085720184,
+          "rank": 13,
+          "source": "vector"
+        },
+        {
+          "category_id": "6779",
+          "name": "Recipe Card Boxes",
+          "full_path": "Office Supplies > Filing & Organization > Recipe Card Boxes",
+          "description": null,
+          "similarity": 0.46876448672828586,
+          "rank": 14,
+          "source": "vector"
+        },
+        {
+          "category_id": "7097",
+          "name": "Special Occasion Card Boxes & Holders",
+          "full_path": "Arts & Entertainment > Party & Celebration > Party Supplies > Special Occasion Card Boxes & Holders",
+          "description": null,
+          "similarity": 0.4654031873879019,
+          "rank": 15,
+          "source": "vector"
+        }
+      ],
+      "steps": [
+        {
+          "step_no": 1,
+          "role": "classifier",
+          "output": {
+            "category_id": "53",
+            "confidence": 1.0,
+            "rationale": "The product is a $50 Store Gift Card, which falls under the category of gift cards and certificates in the Arts & Entertainment > Party & Celebration > Gift Giving section.",
+            "evidence": [],
+            "alternates": []
+          },
+          "valid_choice": true,
+          "error": null,
+          "latency_ms": 2078
+        },
+        {
+          "step_no": 2,
+          "role": "critic",
+          "output": {
+            "own_pick": "id=53",
+            "verdict": "accept",
+            "issues": [],
+            "suggested_category_id": "id=53",
+            "confidence": 1.0
+          },
+          "valid_choice": false,
+          "error": null,
+          "latency_ms": 2118
+        }
+      ]
+    },
+    "error": null,
+    "seconds": 4.4
+  }
+]

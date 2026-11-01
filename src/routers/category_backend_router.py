@@ -9,8 +9,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from src.config import settings
 from src.database import get_db, async_session_factory, get_db_session
 
-from src.services.rag.category_embedding_service import embed_categories, embedding_status
-from src.services.rag.embedder import OllamaEmbedder
+from src.services.category_embedding_service import embed_categories, embedding_status
+from src.services.embedder import OllamaEmbedder
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/categories", tags=["categories"])
