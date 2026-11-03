@@ -27,16 +27,16 @@ The prototype runs locally on Ollama. The MVP adds Kafka: product events arrive,
 
 ```mermaid
 flowchart LR
-    P["Product (API or event)"] --> CB["Context build"]
-    CB --> RET["Retrieve candidates - pgvector top-k plus sibling categories"]
-    RET --> CLS["Classifier LLM"]
-    CLS --> CRT["Critic LLM"]
-    CRT -- "revise" --> CLS
-    CRT -- "accept" --> SC["Score"]
-    SC --> DEC{"Decide"}
-    DEC -- "0.85 or above" --> L["Auto-link"]
-    DEC -- "0.60 to 0.85" --> R["Review"]
-    DEC -- "below 0.60" --> U["Unclassified"]
+  P["Product (API or event)"] --> CB["Context build"]
+  CB --> RET["Retrieve candidates - pgvector top-k plus sibling categories"]
+  RET --> CLS["Classifier LLM"]
+  CLS --> CRT["Critic LLM"]
+  CRT -- "revise" --> CLS
+  CRT -- "accept" --> SC["Score"]
+  SC --> DEC{"Decide"}
+  DEC -- "0.85 or above" --> L["Auto-link"]
+  DEC -- "0.60 to 0.85" --> R["Review"]
+  DEC -- "below 0.60" --> U["Unclassified"]
 ```
 
 1. **Context build.** The product is normalised into a `ProductContext`. Categories already linked to its base product or siblings are looked up, since variants almost always share a category.
@@ -67,6 +67,8 @@ Files built so far. Paths under `src/` match the running app; adjust if yours di
 ```
 learn-agentic/
 ├── database/
+│   ├── scripts/
+│   │   └── apply_migrations.sh           # applies new migrations once, each in one transaction
 │   ├── migrations/
 │   │   ├── 001_initial_schema.sql        # all tables (schema.sql)
 │   │   └── 002_*.sql                     # trigger, constraints, added columns (see Setup)
@@ -188,14 +190,27 @@ List settings (`CORS_ORIGINS`) must be JSON in `.env`.
 
 ### 4. Schema
 
-Run each migration in a single transaction, stopping on the first error, so a failure leaves nothing half-applied:
+Migrations live in `database/migrations/` and are applied by `database/scripts/apply_migrations.sh`, which runs each new file once, in order, and records it in `schema_migrations`.
 
 ```bash
-psql "postgresql://postgres:postgres@localhost:5533/pgvector" \
-  -1 -v ON_ERROR_STOP=1 -f database/migrations/001_initial_schema.sql
+# see what would run
+PG_URL="$DATABASE_URL" database/scripts/apply_migrations.sh --dry-run
+
+# apply
+PG_URL="$DATABASE_URL" database/scripts/apply_migrations.sh
+
+# or through the container (connects as $PGUSER, default postgres, to $PGDATABASE, default pgvector)
+DB_CONTAINER=pgvector database/scripts/apply_migrations.sh
 ```
 
-Then apply the changes made after the initial schema, as `002_post_initial.sql`:
+- Each file runs in one transaction together with its tracking row. If a statement fails, nothing from that file is kept and it isn't recorded, so you fix the file and rerun.
+- Don't put `BEGIN`/`COMMIT` or `CREATE INDEX CONCURRENTLY` in a migration file; both conflict with the wrapping transaction.
+- Name files with zero-padded numbers (`001_`, `002_` … `010_`) so lexical order is the intended order.
+- Never edit an applied file. The script stores a checksum and warns if an applied file has changed; add a new migration instead.
+- If the database was created by Docker's `docker-entrypoint-initdb.d`, record the files already in place without running them: `--mark-up-to 001_initial_schema.sql` (or `--mark-baseline` for all current files).
+- `PG_URL` accepts the app's `postgresql+asyncpg://` URL.
+
+The changes made after the initial schema go in `002_post_initial.sql`:
 
 ```sql
 -- updated_at maintained by the database, and only when a row actually changes
@@ -221,7 +236,7 @@ ALTER TABLE category_embeddings
     ADD COLUMN IF NOT EXISTS updated_at timestamptz NOT NULL DEFAULT now();
 ```
 
-> To reset a dev database: `DROP SCHEMA public CASCADE; CREATE SCHEMA public;` then rerun the migrations.
+> To reset a dev database: `DROP SCHEMA public CASCADE; CREATE SCHEMA public;` then rerun the script. This also drops `schema_migrations`, so every file is applied again.
 
 ### Database tables
 
@@ -422,7 +437,7 @@ Changing the embedding model or its dimension means a new `vector(n)` column siz
 | `SettingsError: error parsing value for field "cors_origins"` | List settings are parsed as JSON | `CORS_ORIGINS=["http://localhost:3000"]` |
 | `async_generator object get_db … is not a callable object` | `Depends(get_db())` | `Depends(get_db)`, without parentheses |
 | `'_AsyncGeneratorContextManager' object is not an async iterator` | `get_db` decorated with `@asynccontextmanager` | Remove the decorator from FastAPI dependencies |
-| `relation "categories" already exists` on a migration | A previous run failed halfway | Reset the dev schema; run migrations with `psql -1 -v ON_ERROR_STOP=1` |
+| `relation "categories" already exists` on a migration | A file was applied outside the script, or before it ran transactionally | Reset the dev schema and rerun `apply_migrations.sh`, or record it with `--mark-up-to` |
 | Inserting vectors fails with asyncpg | pgvector type not registered | Register `pgvector.asyncpg.register_vector` on connect (below) |
 | `BadGzipFile: … b'<!'` | The download saved an HTML error page | Use the URL from the dataset's project page; `curl -fL` |
 | Critic step errors with `ReadTimeout('')` | Critic call exceeds the HTTP timeout | Raise the read timeout; shorten the critic prompt |
@@ -511,7 +526,7 @@ In build order. Each item has a "done when" so progress is unambiguous.
 - [ ] Topics:
 
   | Topic | Key | Purpose |
-  |---|---|---|
+    |---|---|---|
   | `product.events` | `base_product_id` | Product changes in |
   | `category.events` | `category_id` | Taxonomy changes in |
   | `classification.completed` | `product_id` | Results out |
