@@ -1,0 +1,105 @@
+
+{
+  "model": "qwen2.5:7b",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Role\nYou are an independent product classification reviewer. Your responsibility is to critically evaluate the category assigned to a product by a classification agent.\nYou must independently assess the classification rather than blindly accepting the classifier's decision.\n\nObjective\nDetermine whether the assigned category is the most appropriate leaf-node category for the given product, based on the product information and the available category taxonomy.\n\nCritique Guidelines\nValidate category relevance: Determine whether the selected category accurately represents the product's primary function, purpose, and characteristics.\nValidate leaf-node selection: Ensure that the selected category is a leaf node and does not have any child categories.\nChallenge the classification: Actively look for reasons why the selected category might be incorrect, overly broad, overly specific, or misleading.\nConsider alternative categories: Examine other categories in the supplied taxonomy that could be a better fit.\nEvaluate semantic accuracy: Do not rely solely on matching keywords between the product description and category name. Consider the actual product context and intended use.\nIdentify classification errors: Pay particular attention to:\n- Incorrect product type assumptions.\n- Confusion between similar product categories.\n- Classification based on secondary rather than primary product functionality.\n- Incorrect interpretation of product attributes.\n- Selection of a parent category instead of a leaf category.\n- Selection of a category that only partially describes the product.\n\nAvoid unnecessary changes: Do not recommend changing a classification simply because another category is also somewhat relevant. Recommend a change only when there is a demonstrably better category.\nDo not invent categories: Any alternative category must exist in the supplied taxonomy and must be a leaf node.\n\nDecision\nChoose one of the following outcomes:\n- Accept: The assigned category is the most appropriate classification.\n- Revise: The assigned category is incorrect or a better leaf-node category exists.\n\nReturn JSON matching the schema."
+    },
+    {
+      "role": "user",
+      "content": "PRODUCT\n{\n  \"title\": \"Raised Dog Bowls,6 Inch Ceramic Dog Bowl Dish, with Metal Stand and Grey Silicone Pet Feeding Mat- 32 Ounces Pet Food Water Feeder for Cats Small Dogs -Set of 2-White\",\n  \"description\": \"【Two Bowls+Metal Stand+Dog food mat】Really practical dog food and water bowl set,bowls measures 6.1\\\" Dia x 2.6H\\\",suitable for your pet dogs, cats, puppies and kittens to use, perfect for holding dry kibble, wet food, treats, or water.You can save time to choose a food mat for your pet. 【Convenient Raised Pet bowl set】This dog bowl is equipped with a non-slip metal stand support.The 3.3inch high metal frame is designed to protect the pet’s neck joints.Bring with light gray dog food mat,flexible and easily taken anywhere for travel. 【Large Capacity&Premium Material】With 32 ounces of capacity,it can be used as a large water bowl or food bowl.The dog food bowl is made of medium temperature clay, not contain lead and cadmium. 【More Stable and No Mess】The weight of ceramic bowls and metal stand to prevent strong dogs and cats from nudging bowls around the floor and tipping the contents out.The metal stand with rubber base protects your floor from scratching. 【Safe and Easy Wash】With smooth surface of the cat & dog food and water bowl always easy to wash for your lovely pet, dishwasher-safe.Pet ceramic bowls are easy to keep clean and hygienic.\",\n  \"attributes\": {\n    \"brand\": \"FIVEAGE\",\n    \"material\": \"Ceramic\",\n    \"target_species\": \"Cat, Rabbit, Dog\"\n  },\n  \"price\": \"32.88 USD\"\n}\n\nCANDIDATES\n- id=6252 | Animals & Pet Supplies > Pet Supplies > Pet Bowls, Feeders & Waterers\n- id=7143 | Animals & Pet Supplies > Pet Supplies > Pet Bowl Mats\n- id=8513 | Animals & Pet Supplies > Pet Supplies > Pet Bowl Stands\n- id=505307 | Animals & Pet Supplies > Pet Supplies > Fish Supplies > Aquarium Air Stones & Diffusers\n- id=505313 | Animals & Pet Supplies > Pet Supplies > Pet Training Aids > Pet Training Clickers & Treat Dispensers\n- id=5163 | Animals & Pet Supplies > Pet Supplies > Pet Food Scoops\n- id=5162 | Animals & Pet Supplies > Pet Supplies > Pet Food Containers\n- id=7386 | Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Cage Accessories > Bird Cage Food & Water Dishes\n- id=7142 | Animals & Pet Supplies > Pet Supplies > Cat Supplies > Cat Litter Box Mats\n- id=505303 | Animals & Pet Supplies > Pet Supplies > Fish Supplies > Aquarium & Pond Tubing\n- id=5021 | Animals & Pet Supplies > Pet Supplies > Fish Supplies > Aquarium Gravel & Substrates\n- id=505306 | Animals & Pet Supplies > Pet Supplies > Fish Supplies > Aquarium Fish Nets\n- id=543683 | Animals & Pet Supplies > Pet Supplies > Cat Supplies > Cat Food > Prescription Cat Food\n- id=543684 | Animals & Pet Supplies > Pet Supplies > Cat Supplies > Cat Food > Non-prescription Cat Food\n- id=543681 | Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Food > Prescription Dog Food\n\nPROPOSED CLASSIFICATION\n{\n  \"category_id\": \"6252\",\n  \"confidence\": 1.0,\n  \"rationale\": \"The product is a set of raised dog bowls with a metal stand and a silicone mat, which falls under the category of pet bowls, feeders, and waterers. This category is the most specific and accurate representation of the product's primary purpose.\",\n  \"evidence\": [],\n  \"alternates\": []\n}"
+    }
+  ],
+  "format": {
+    "$defs": {
+      "CriticIssue": {
+        "properties": {
+          "type": {
+            "enum": [
+              "not_leaf",
+              "too_generic",
+              "better_sibling",
+              "contradicts_related",
+              "unsupported_evidence",
+              "other"
+            ],
+            "title": "Type",
+            "type": "string"
+          },
+          "detail": {
+            "maxLength": 400,
+            "title": "Detail",
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "detail"
+        ],
+        "title": "CriticIssue",
+        "type": "object"
+      }
+    },
+    "properties": {
+      "category_id": {
+        "description": "This field is critic agents own pick for classification of product.",
+        "title": "Category Id",
+        "type": "string"
+      },
+      "verdict": {
+        "enum": [
+          "accept",
+          "revise"
+        ],
+        "title": "Verdict",
+        "type": "string"
+      },
+      "issues": {
+        "items": {
+          "$ref": "#/$defs/CriticIssue"
+        },
+        "maxItems": 2,
+        "title": "Issues",
+        "type": "array"
+      },
+      "category_suggestion": {
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 5,
+        "title": "Category Suggestion",
+        "type": "array"
+      },
+      "top_category_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Top Category Id"
+      },
+      "confidence": {
+        "maximum": 1,
+        "minimum": 0,
+        "title": "Confidence",
+        "type": "number"
+      }
+    },
+    "required": [
+      "category_id",
+      "verdict",
+      "confidence"
+    ],
+    "title": "CriticOutput",
+    "type": "object"
+  },
+  "stream": false,
+  "options": {
+    "temperature": 0.1
+  }
+}

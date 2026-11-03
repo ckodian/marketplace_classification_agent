@@ -76,7 +76,7 @@ def score(
     chosen = by_id[final.category_id]
     signals = {
         "self": final.confidence,
-        "critic_agrees": 1.0 if critique and critique.own_pick == final.category_id else 0.0,
+        "critic_agrees": 1.0 if critique and critique.category_id == final.category_id else 0.0,
         "related_agrees": 1.0 if final.category_id in related_ids else 0.0,
         "retrieval": max(0.0, chosen.similarity),
     }
@@ -98,10 +98,11 @@ async def classify_product(
         session: AsyncSession,
         embedder: OllamaEmbedder,
         llm: LLMClient,
+        critic_llm: LLMClient,
         product: ProductIn,
 ) -> ClassificationResult:
     trace = _Trace()
-    classifier, critic = ClassifierAgent(llm), CriticAgent(llm)
+    classifier, critic = ClassifierAgent(llm), CriticAgent(critic_llm)
 
     ctx = await build_context(session, product)
     candidates = await retrieve_candidates(session, embedder, ctx)
@@ -120,19 +121,24 @@ async def classify_product(
     proposal = await _classify_valid(classifier, ctx, candidates, trace)
     if proposal is None:
         return result(None, 0.0, {}, "failed")
+    print(f"Classifier agents pick - {proposal.category_id}")
 
     ids = {c.category_id for c in candidates}
     critique: CriticOutput | None = None
     for _round in range(MAX_REVISIONS):
         started = time.perf_counter()
+        print(f"starting critic agent")
         try:
-            critique = await critic.run(ctx, candidates, proposal)
+            critique = await critic.run(ctx, candidates, proposal, 0.1)
+            print(f"Classifier agents pick - {proposal.category_id}")
+            print(f"Critics own pick - {critique.category_id}")
+            logger.info("critic issues:\n  %s", "\n  ".join(f"{i.type}: {i.detail}" for i in critique.issues))
         except LLMError as e:
             trace.add("critic", None, started, valid=False, error=str(e))
             critique = None
             break   # TODO: retry, or proceed without a critique (scores lower)?
-        valid = critique.own_pick in ids and (
-                critique.suggested_category_id is None or critique.suggested_category_id in ids
+        valid = critique.category_id in ids and (
+                critique.top_category_id is None or critique.top_category_id in ids
         )
         trace.add("critic", critique, started, valid=valid)
         if critique.verdict == "accept" or not valid:

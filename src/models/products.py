@@ -113,16 +113,17 @@ class CriticIssue(BaseModel):
 class CriticOutput(BaseModel):
     # The critic commits to its own pick BEFORE judging the classifier's.
     # Small models otherwise just agree with whatever they're shown.
-    own_pick: str = Field(description="The critic's own choice from the candidates.")
+    category_id: str = Field(description="This field is critic agents own pick for classification of category.")
     verdict: Literal["accept", "revise"]
-    issues: list[CriticIssue] = Field(default_factory=list, max_length=5)
-    suggested_category_id: str | None = None
+    issues: list[CriticIssue] = Field(default_factory=list, max_length=2)
+    category_suggestion: list[str] = Field(default_factory=list, max_length=5)
+    top_category_id: str | None = None
     confidence: float = Field(ge=0, le=1)
 
     @model_validator(mode="after")
     def _revise_needs_suggestion(self) -> "CriticOutput":
-        if self.verdict == "revise" and not self.suggested_category_id:
-            raise ValueError("verdict 'revise' requires suggested_category_id")
+        if self.verdict == "revise" and not self.top_category_id:
+            raise ValueError("verdict 'revise' requires top_category_id")
         return self
 
 

@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     ollama_default_embedder: str = "nomic-embed-text"
     ollama_embedding_dimension: int = 768
     ollama_text_model: str = "qwen2.5:7b"
+    ollama_critic_model: str = "qwen2.5vl:7b"
     ollama_vision_model: str = "qwen2.5vl:7b"
     ollama_max_batch_embedding: int = 10
 
@@ -16,7 +17,7 @@ class Settings(BaseSettings):
     # model can be high (model load + warmup), so we allow 5 minutes.
     timeout_llm_ollama_seconds: int = 300
     # Generic external HTTP — embeddings, sample fetches, news API.
-    timeout_external_http_seconds: int = 30
+    timeout_external_http_seconds: int = 300
 
     cors_origins: list[str] = ["*"]
     env: str = "development"

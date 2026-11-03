@@ -17,7 +17,7 @@ class LLMError(Exception):
 
 class LLMClient(Protocol):
     model:str
-    async def complete_json(self, system: str, user: str, output: type[T]) -> T: ...
+    async def complete_json(self, system: str, user: str, output: type[T], temperature: float) -> T: ...
 
 
 class OllamaChat:
@@ -37,10 +37,23 @@ class OllamaChat:
     async def __aexit__(self, *exc) -> None:
         await self.aclose()
 
-    async def complete_json(self, system: str, user: str, output: type[T]) -> T:
+    async def complete_json(self, system: str, user: str, output: type[T], temperature: float = 0.0) -> T:
         started = time.perf_counter()
 
         try:
+
+            req = {
+                "model": self.model,
+                "messages": [
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
+                ],
+                "format": output.model_json_schema(),
+                "stream": False,
+                "options": {"temperature": temperature}
+            }
+            print(f"{req}")
+
             res = await self._client.post("/api/chat",
                 json = {
                     "model": self.model,
@@ -50,13 +63,16 @@ class OllamaChat:
                     ],
                     "format": output.model_json_schema(),
                     "stream": False,
-                    "options": {"temperature": 0},
+                    "options": {"temperature": temperature},
             })
+            print(f"{res}")
             res.raise_for_status()
         except httpx.HTTPStatusError as e:
             raise LLMError(f"Ollama {e.response.status_code}: {e.response.text[:300]}") from e
         except httpx.HTTPError as e:
             raise LLMError(f"Ollama request failed: {e!r}") from e
+        except Exception as ex:
+            raise LLMError(f"An exception occured: {ex!r}") from ex
 
         raw = res.json().get("message", {}).get("content", "")
 
@@ -68,3 +84,8 @@ class OllamaChat:
         logger.debug("%s via %s in %.0f ms", output.__name__, self.model,
                      (time.perf_counter() - started) * 1000)
         return parsed
+
+class OllamaCriticChat(OllamaChat):
+    def __init__(self, model:str| None = None, client: httpx.AsyncClient | None = None):
+        super().__init__(model, client)
+        self.model = model or settings.ollama_critic_model
